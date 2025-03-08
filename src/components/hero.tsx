@@ -11,10 +11,10 @@ export default function Hero({ className }: { className: string }) {
   });
 
   return (
-    <div>
-      <div className={`${className} h-[calc(100vh-6rem)] flex justify-center items-center pb-[4rem] flex-col`} data-aos="fade-up" data-aos-duration="1500">
-        <h1 className="w-1/2 font-normal text-5xl text-center pb-12">____ is a software agency that grows brands digitally</h1>
-        <Button className="font-bold text-lg h-[3rem] rounded-3xl"><Link href="/contact">Free Consultation</Link></Button>
+    <div className="">
+      <div className={`${className} h-[calc(100vh-6rem)] flex justify-center items-center flex-col`} data-aos="fade-up" data-aos-duration="1500">
+        <h1 className="w-1/2 font-normal text-5xl pb-12 text-center">____ is a software agency that grows brands digitally</h1>
+        <Button className="font-bold text-lg h-[3rem] rounded-3xl"><Link href="/contact">Get a Free Estimate</Link></Button>
       </div>
     </div >
   );
