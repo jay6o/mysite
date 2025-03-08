@@ -1,101 +1,123 @@
+'use client';
+
 import Image from "next/image";
+import Nav from "../components/nav";
+import Hero from "../components/hero";
+import { Menu } from "lucide-react";
+import Link from "next/link";
+import Footer from "../components/footer";
+import LocomotiveScroll from "locomotive-scroll";
+import { useEffect, useRef } from "react";
+import shape1 from "../../public/shape1.png";
+import blocks from "../../public/blocks.png"
+import tools from "../../public/tools.png"
+import palette from "../../public/palette.png";
+import calendar from "../../public/calendar.png";
+import hourglass from "../../public/hourglass.png";
+
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion"
 
 export default function Home() {
-  return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+  const lsRef = useRef<LocomotiveScroll | null>(null);
+  useEffect(() => {
+    const ls: LocomotiveScroll = new LocomotiveScroll({
+      lenisOptions: {
+        wrapper: window,
+        wheelMultiplier: 0.8,
+        touchMultiplier: 0.8
+      }
+    });
+    lsRef.current = ls;
+    return () => ls.destroy();
+  });
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+  return (
+    <main data-scroll-speed="0.3" className="main w-100vw">
+      <Nav />
+      <Hero className="hero"></Hero>
+
+      {/* Section 3 */}
+      <div className="flex justify-center items-center w-full h-screen">
+        <div className="hidden lg:flex lg:h-2/3 lg:w-1/3 relative">
+          <Image className="calendar-3d absolute top-3 left-1/3" src={calendar} alt="3D Block" height={150} width={150} />
+          <Image className="palette-3d absolute top-1/4 right-0" src={palette} alt="3D Block" height={150} width={150} />
+          <Image className="hourglass-3d absolute bottom-0 left-2/3" src={hourglass} alt="3D Block" height={150} width={150} />
+          <Image className="blocks-3d absolute bottom-1/4 left-20" src={blocks} alt="3D Block" height={150} width={150} />
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+        <div className="w-full lg:w-2/3 flex flex-col justify-center items-center">
+          <p className="w-2/3 text-5xl">World class engineers & designers turning dreams to reality</p>
+        </div>
+      </div>
+
+      {/*After hero (Section 2)*/}
+      <div className="section-2 justify-center lg:justify-start w-full flex flex-row min-h-fit">
+        <div className="w-full lg:w-1/2 flex flex-col justify-center items-center align-center">
+          <div className="w-5/6 lg:w-2/3 lg:pl-8">
+            <h2 className="text-5xl font-semibold pb-12 text-left">Our Expertise</h2>
+
+            {/* TODO: add smooth transition to underline */}
+            <Accordion type="single" collapsible className="w-full min-h-fit">
+              <AccordionItem value="item-1">
+                <AccordionTrigger className="text-3xl font-medium">Branding</AccordionTrigger>
+                <AccordionContent className="text-lg">
+                  Yes. It adheres to the WAI-ARIA design pattern.
+                </AccordionContent>
+              </AccordionItem>
+              <AccordionItem value="item-2">
+                <AccordionTrigger className="text-3xl font-medium">Digital Products</AccordionTrigger>
+                <AccordionContent className="text-lg">
+                  Yes. It adheres to the WAI-ARIA design pattern.
+                </AccordionContent>
+              </AccordionItem>
+              <AccordionItem value="item-3">
+                <AccordionTrigger className="text-3xl font-medium">Proprietary Software</AccordionTrigger>
+                <AccordionContent className="text-lg">
+                  Yes. It adheres to the WAI-ARIA design pattern.
+                </AccordionContent>
+              </AccordionItem>
+              <AccordionItem value="item-4">
+                <AccordionTrigger className="text-3xl font-medium">SEO</AccordionTrigger>
+                <AccordionContent className="text-lg">
+                  Yes. It adheres to the WAI-ARIA design pattern.
+                </AccordionContent >
+              </AccordionItem>
+              <AccordionItem value="item-5">
+                <AccordionTrigger className="text-3xl font-medium">Copywriting</AccordionTrigger>
+                <AccordionContent className="text-lg">
+                  Yes. It adheres to the WAI-ARIA design pattern.
+                </AccordionContent >
+              </AccordionItem>
+            </Accordion>
+          </div>
+        </div>
+        <div className="hidden lg:flex justify-center items-center lg:w-1/2 h-[500px] w-[500px]">
+          <Image className="shape-3d" src={shape1} alt="image" width={390} height={390} />
+        </div>
+      </div>
+
+      <div className="mission flex flex-col bg-black">
+        <h2 className="text-[#f2f2f2] text-center font-semibold text-3xl">Our Mission</h2>
+        <div className="flex justify-center">
+          <div className="bg-black">
+            <h3 className="bg-black text-[#f2f2f2]">Embrace Dreams</h3>
+          </div>
+          <div className="bg-black">
+            <h3 className="bg-black text-[#f2f2f2]">Validate Ideas</h3>
+          </div>
+          <div className="bg-black">
+            <h3 className="bg-black text-[#f2f2f2]">Build</h3>
+          </div>
+        </div>
+      </div>
+
+
+      {/* Footer */}
+      <Footer className="footer" />
+    </main>
   );
 }

@@ -1,0 +1,12 @@
+{
+				"nav": {
+								"services": "Services",
+								"about": "About Us",
+								"contact": "Contact"
+				},
+
+				"hero": {
+								"text": "Achieve your dreams through a digital presence",
+								"cta": "Free estimate"
+				}
+}
