@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Nav() {
   return (
-    <nav className="flex justify-row justify-between h-[6rem] min-h-fit items-center border border-b-2 border-black bg-[#f2f2f2]/95 backdrop-blur-xs sticky top-0 z-10">
+    <nav className="flex justify-row justify-between h-[6rem] min-h-fit items-center border border-b-2 border-black bg-[#f2f2f2]/95 backdrop-blur-xs sticky top-0 z-30">
       <div className="ml-12 bg-transparent">
         <h1 className="font-bold text-xl bg-transparent">
           LOGO
