@@ -5,23 +5,25 @@ export default function Footer({ className }: { className: string }) {
   return (
     <div className={`${className} w-full border-t border-t-2 border-black`}>
       <div className="flex w-full p-8">
-        <div className="w-full flex justify-around items-center">
-          <div className="">
+        <div className="w-full flex flex-col lg:flex-row justify-between lg:justify-around items-center">
+          <div className="pb-12">
             <h2 className="font-bold text-2xl p-4">Need a project built?</h2>
             <div>
               <Button variant="outline" size="lg" className="m-4 p-8">Click for free estimate!</Button>
             </div>
           </div>
-          <div className="flex flex-col items-center">
-            <p className="text-lg font-bold">Contact Us</p>
-            <p className="">x-xxx-xxx-xxxx</p>
-            <p>email@email.com</p>
-          </div>
-          <div className="flex flex-col items-center">
-            <p className="text-lg font-bold">Company</p>
-            <p className="">Services</p>
-            <Link href="about"><p>About Us</p></Link>
-            <Link href="contact"><p>Contact</p></Link>
+          <div className="flex justify-between lg:justify-around w-5/6 lg:w-1/2">
+            <div className="flex flex-col items-center">
+              <p className="text-lg font-bold">Contact Us</p>
+              <p className="">x-xxx-xxx-xxxx</p>
+              <p>email@email.com</p>
+            </div>
+            <div className="flex flex-col items-center">
+              <p className="text-lg font-bold">Company</p>
+              <p className="">Services</p>
+              <Link href="about"><p>About Us</p></Link>
+              <Link href="contact"><p>Contact</p></Link>
+            </div>
           </div>
         </div>
       </div>

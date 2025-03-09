@@ -3,8 +3,6 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import { useEffect } from "react";
-const AOS = require("aos");
-import "aos/dist/aos.css";
 import { motion, useScroll, useTransform } from "framer-motion";
 import calendar from "../../public/calendar.png";
 import palette from "../../public/palette.png";
@@ -12,11 +10,20 @@ import hourglass from "../../public/hourglass.png";
 import blocks from "../../public/blocks.png";
 
 export default function Hero({ className }: { className: string }) {
-  useEffect(() => {
-    AOS.init();
-  });
 
   const { scrollYProgress } = useScroll();
+
+  // AOS variants for elements
+  const heroTextVariants = {
+    hidden: { opacity: 0, x: -100 },
+    visible: { opacity: 1, x: 0 }
+  };
+
+  const heroImageVariants = {
+    hidden: { opacity: 0, x: "50%" },
+    visible: { opacity: 1, x: "0%" }
+  };
+
 
   // Define parallax effects for each image
   const calendarY = useTransform(scrollYProgress, [0, 1], ["0%", "500%"]);
@@ -27,13 +34,25 @@ export default function Hero({ className }: { className: string }) {
 
   return (
     <div className="w-full flex justify-center items-center w-full">
-      <div className={`${className} h-[calc(100vh-6rem)] flex justify-center items-center flex-col w-2/3`} data-aos="fade-up" data-aos-duration="1500">
+      <motion.div
+        className={`${className} h-[calc(100vh-6rem)] flex justify-center items-center flex-col w-2/3`}
+        variants={heroTextVariants}
+        initial="hidden"
+        whileInView="visible"
+        transition={{ duration: 0.7, ease: "easeInOut" }}
+      >
         <h1 className="w-5/6 font-normal text-5xl pb-12 pl-12 text-left">____ is a software agency that grows brands digitally</h1>
         <div className="w-5/6 pl-12">
           <Button className="font-bold text-lg h-[3.4rem] rounded-3xl"><Link href="/contact">Get a Free Estimate</Link></Button>
         </div>
-      </div>
-      <div className="hidden lg:flex lg:h-[calc(100vh-6rem)] lg:w-1/2 relative overflow-hidden">
+      </motion.div>
+      <motion.div
+        className="hidden lg:flex lg:h-[calc(100vh-6rem)] lg:w-1/2 relative overflow-hidden"
+        variants={heroImageVariants}
+        initial="hidden"
+        whileInView="visible"
+        transition={{ duration: 1.3, ease: "easeInOut" }}
+      >
         <motion.div
           className="absolute top-20 left-20 z-10 bg-transparent"
           style={{ y: calendarY }}
@@ -56,7 +75,7 @@ export default function Hero({ className }: { className: string }) {
           style={{ y: blocksY }}>
           <Image className="blocks-3d" src={blocks} alt="3D Block" height={160} width={160} />
         </motion.div>
-      </div>
+      </motion.div>
     </div >
   );
 };

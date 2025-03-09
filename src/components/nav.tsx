@@ -17,6 +17,7 @@ export default function Nav() {
           <li className="mx-6 text-xl"><Link href="/about">About Us</Link></li>
           <li className="mx-6 text-xl"><Link href="contact">Contact</Link></li>
         </ul>
+
         {/* Handheld Burger Menu */}
         <button > {/* Add onclick handler */}
           <Menu className="md:hidden m-8" size={36} />
