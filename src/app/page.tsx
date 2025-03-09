@@ -13,7 +13,7 @@ import tools from "../../public/tools.png";
 import trophy from "../../public/trophy.png";
 import clock from "../../public/clock.png";
 import flask from "../../public/flask.png";
-import { useTransform, useScroll, motion } from "framer-motion";
+import { useTransform, useScroll, motion, cursor } from "framer-motion";
 
 import {
   Accordion,
