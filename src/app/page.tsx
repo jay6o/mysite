@@ -3,17 +3,12 @@
 import Image from "next/image";
 import Nav from "../components/nav";
 import Hero from "../components/hero";
-import { Menu } from "lucide-react";
-import Link from "next/link";
 import Footer from "../components/footer";
 import LocomotiveScroll from "locomotive-scroll";
 import { useEffect, useRef } from "react";
 import shape1 from "../../public/shape1.png";
 import tools from "../../public/tools.png";
-import trophy from "../../public/trophy.png";
-import clock from "../../public/clock.png";
-import flask from "../../public/flask.png";
-import { useTransform, useScroll, motion, cursor } from "framer-motion";
+import { useTransform, useScroll, motion } from "framer-motion";
 
 import {
   Accordion,
