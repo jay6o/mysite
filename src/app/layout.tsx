@@ -1,7 +1,5 @@
-import AOS from "aos";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import { inter, imprima } from "./fonts";
 import "./globals.css";
 
 const geistSans = Geist({

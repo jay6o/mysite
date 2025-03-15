@@ -2,7 +2,6 @@
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
-import { useEffect } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import calendar from "../../public/calendar.png";
 import palette from "../../public/palette.png";
@@ -24,34 +23,36 @@ export default function Hero({ className }: { className: string }) {
     visible: { opacity: 1, x: "0%" }
   };
 
-
   // Define parallax effects for each image
   const calendarY = useTransform(scrollYProgress, [0, 1], ["0%", "500%"]);
   const paletteY = useTransform(scrollYProgress, [0, 1], ["0%", "600%"]);
   const hourglassY = useTransform(scrollYProgress, [0, 1], ["0%", "-80%"]);
   const blocksY = useTransform(scrollYProgress, [0, 1], ["0%", "50%"]);
 
-
   return (
     <div className="w-full flex justify-center items-center w-full">
       <motion.div
-        className={`${className} h-[calc(100vh-6rem)] flex justify-center items-center flex-col w-2/3`}
+        className={`${className} h-[calc(100vh-6rem)] flex justify-center items-center flex-col w-2/3 relative`}
         variants={heroTextVariants}
         initial="hidden"
         whileInView="visible"
         transition={{ duration: 0.7, ease: "easeInOut" }}
       >
-        <h1 className="w-5/6 font-normal text-5xl pb-12 pl-12 text-left">____ is a software agency that grows brands digitally</h1>
+        <h1 className="w-5/6 font-normal text-5xl pb-12 pl-12 text-left z-10">____ is a software agency that grows brands digitally</h1>
         <div className="w-5/6 pl-12">
-          <Button className="font-bold text-lg h-[3.4rem] rounded-3xl"><Link href="/contact">Get a Free Estimate</Link></Button>
+          <Button className="font-bold text-lg h-[3.4rem] rounded-3xl border-black"><Link href="/contact">Get a Free Estimate</Link></Button>
         </div>
+        <motion.div
+          className="mobile-assets absolute top-1/2 left-1/2 z-0"
+        >
+        </motion.div>
       </motion.div>
       <motion.div
         className="hidden lg:flex lg:h-[calc(100vh-6rem)] lg:w-1/2 relative overflow-hidden"
         variants={heroImageVariants}
         initial="hidden"
         whileInView="visible"
-        transition={{ duration: 1.3, ease: "easeInOut" }}
+        transition={{ duration: 0.9, ease: "easeInOut", delay: 0.2 }}
       >
         <motion.div
           className="absolute top-20 left-20 z-10 bg-transparent"

@@ -9,7 +9,7 @@ export default function Footer({ className }: { className: string }) {
           <div className="pb-12">
             <h2 className="font-bold text-2xl p-4">Need a project built?</h2>
             <div>
-              <Button variant="outline" size="lg" className="m-4 p-8">Click for free estimate!</Button>
+              <Link href="/contact"><Button variant="outline" size="lg" className="m-4 p-8">Click for free estimate!</Button></Link>
             </div>
           </div>
           <div className="flex justify-between lg:justify-around w-5/6 lg:w-1/2">
