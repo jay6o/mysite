@@ -38,14 +38,10 @@ export default function Hero({ className }: { className: string }) {
         whileInView="visible"
         transition={{ duration: 0.7, ease: "easeInOut" }}
       >
-        <h1 className="w-5/6 font-normal text-5xl pb-12 pl-12 text-left z-10">____ is a software agency that grows brands digitally</h1>
-        <div className="w-5/6 pl-12">
+        <h1 className="w-5/6 font-normal text-5xl pb-12 lg:pl-12 text-left z-30">____ is a software agency that grows brands digitally</h1>
+        <div className="w-5/6 lg:pl-12 z-10 bg-transparent">
           <Button className="font-bold text-lg h-[3.4rem] rounded-3xl border-black"><Link href="/contact">Get a Free Estimate</Link></Button>
         </div>
-        <motion.div
-          className="mobile-assets absolute top-1/2 left-1/2 z-0"
-        >
-        </motion.div>
       </motion.div>
       <motion.div
         className="hidden lg:flex lg:h-[calc(100vh-6rem)] lg:w-1/2 relative overflow-hidden"
