@@ -11,7 +11,7 @@ export default function Nav({ className }: { className: string }) {
   const closeMenu = () => setMenuOn(false);
   return (
     <nav className={`relative ${className}`}>
-      <div className="flex justify-row justify-between min-h-full items-center border border-b-2 border-black bg-[#f2f2f2]/95 backdrop-blur-xs sticky top-0 z-30">
+      <div className="flex justify-row justify-between min-h-full items-center border-b-2 border-black bg-[#f2f2f2]/95 backdrop-blur-xs sticky top-0 z-30">
         <div className="ml-12 bg-transparent">
           <Link href="/">
             <h1 className="font-bold text-xl bg-transparent">
