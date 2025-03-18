@@ -147,3 +147,7 @@ div, nav {
 body::-webkit-scrollbar {
   scrollbar-width: none;
 }
+
+html, body {
+  overflow-x:hidden;
+}

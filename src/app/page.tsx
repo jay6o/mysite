@@ -48,7 +48,7 @@ export default function Home() {
   };
 
   return (
-    <main data-scroll-speed="0.3" className="main w-100vw">
+    <main data-scroll-speed="0.3" className="main w-[100vw]">
       <Nav className={"h-[6rem] sticky top-0 z-30"} />
       <Hero className="hero z-0"></Hero>
 
