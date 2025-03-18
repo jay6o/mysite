@@ -1,3 +1,5 @@
+'use client'
+
 import { Menu } from "lucide-react";
 import Link from "next/link";
 import MobileMenu from "../components/mobileMenu";
@@ -8,7 +10,7 @@ export default function Nav({ className }: { className: string }) {
   const toggleMenu = () => setMenuOn(!menuOn);
   const closeMenu = () => setMenuOn(false);
   return (
-    <nav className={`relative ${className}`} >
+    <nav className={`relative ${className}`}>
       <div className="flex justify-row justify-between min-h-full items-center border border-b-2 border-black bg-[#f2f2f2]/95 backdrop-blur-xs sticky top-0 z-30">
         <div className="ml-12 bg-transparent">
           <Link href="/">
@@ -27,8 +29,8 @@ export default function Nav({ className }: { className: string }) {
           </ul>
 
           {/* Handheld Burger Menu */}
-          <button > {/* Add onclick handler */}
-            <Menu className="md:hidden m-8" size={36} onClick={toggleMenu} />
+          <button onClick={toggleMenu}> {/* Add onclick handler */}
+            <Menu className="md:hidden m-8" size={36} />
           </button>
         </div>
         <MobileMenu isOpen={menuOn} onClose={closeMenu} />
