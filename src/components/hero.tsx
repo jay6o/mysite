@@ -32,7 +32,7 @@ export default function Hero({ className }: { className: string }) {
   return (
     <div className="w-full h-[calc(100vh-6rem)] flex flex-col lg:flex-row justify-around lg:justify-center items-center w-full">
       <motion.div
-        className={`${className} lg:h-[calc(100vh-6rem)] flex justify-center items-center flex-col w-7/8 lg:w-2/3 relative`}
+        className={`${className} flex-shrink-0 flex justify-center items-center flex-col w-7/8 lg:w-2/3 relative py-8`}
         variants={heroTextVariants}
         initial="hidden"
         whileInView="visible"
@@ -44,7 +44,7 @@ export default function Hero({ className }: { className: string }) {
           <Button className="font-bold text-lg h-[3.5rem] rounded-3xl border-black w-full lg:w-[18rem]"><Link href="/contact">Get Started</Link></Button>
         </div>
       </motion.div >
-      <div className="lg:hidden">
+      <div className="bg-black h-full w-full lg:hidden">
         hello
       </div>
       <motion.div
