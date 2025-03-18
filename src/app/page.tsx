@@ -37,10 +37,20 @@ export default function Home() {
   const toolsY = useTransform(scrollYProgress, [0, 1], ["0%", "-40%"]);
   const shape1Y = useTransform(scrollYProgress, [0, 1], ["0%", "-40%"]);
 
+  const section2TextVariants = {
+    hidden: { opacity: 0, x: 150 },
+    visible: { opacity: 1, x: 0 }
+  };
+
+  const section3TextVariants = {
+    hidden: { opacity: 0, x: 0, y: -100 },
+    visible: { opacity: 1, x: 0, y: 0 }
+  };
+
   return (
     <main data-scroll-speed="0.3" className="main w-100vw">
-      <Nav />
-      <Hero className="hero"></Hero>
+      <Nav className={"h-[6rem]"} />
+      <Hero className="hero z-0"></Hero>
 
       {/* Section 3 */}
       <div className="flex justify-center items-center w-full h-screen">
@@ -52,14 +62,29 @@ export default function Home() {
           </motion.div>
         </div>
         <div className="w-full lg:w-2/3 flex flex-col justify-center items-center">
-          <p className="w-2/3 text-5xl">World class engineers & designers turning dreams to reality</p>
+          <motion.div className="w-2/3 text-5xl"
+            variants={section2TextVariants}
+            whileInView="visible"
+            initial="hidden"
+            viewport={{ amount: 0.4 }}
+            transition={{ duration: 0.7, ease: "easeInOut" }}
+          >
+
+            <p className="">World class engineers & designers turning dreams to reality</p>
+          </motion.div>
         </div>
       </div>
 
       {/*After hero (Section 2)*/}
       <div className="section-2 justify-center lg:justify-start w-full flex flex-row min-h-fit pb-36">
         <div className="w-full lg:w-1/2 flex flex-col justify-center items-center align-center">
-          <div className="w-5/6 lg:w-2/3 lg:pl-8">
+          <motion.div
+            className="w-5/6 lg:w-2/3 lg:pl-8"
+            variants={section3TextVariants}
+            whileInView="visible"
+            initial="hidden"
+            viewport={{ amount: 0.4 }}
+            transition={{ duration: 0.7, ease: "easeInOut" }}>
             <h2 className="text-5xl font-semibold pb-12 text-left">Our Expertise</h2>
 
             {/* TODO: add smooth transition to underline */}
@@ -95,7 +120,7 @@ export default function Home() {
                 </AccordionContent >
               </AccordionItem>
             </Accordion>
-          </div>
+          </motion.div>
         </div>
         <div className="hidden lg:flex justify-center items-center lg:w-1/2 h-[500px] w-[500px] relative">
           <motion.div
