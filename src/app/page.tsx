@@ -55,7 +55,9 @@ export default function Home() {
   return (
     <main data-scroll-container data-scroll-speed="0.3" className="main w-[100vw] bg-[#f2f2f2]">
       <Nav />
-      <Hero className="hero z-0"></Hero>
+      <div className="pt-[5rem] lg:pt-[6rem]">
+        <Hero className="hero z-0"></Hero>
+      </div>
 
       {/* Social Proof (Section 2)*/}
       {/* ADD TEXT ANIMATION */}
