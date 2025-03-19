@@ -7,7 +7,6 @@ import calendar from "../../public/calendar.png";
 import palette from "../../public/palette.png";
 import hourglass from "../../public/hourglass.png";
 import blocks from "../../public/blocks.png";
-import {Star} from "lucide-react";
 
 export default function Hero({ className }: { className: string }) {
 
