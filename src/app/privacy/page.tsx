@@ -1,5 +1,5 @@
 import Nav from "@/components/nav";
-import Footer from "@/components/footer";
+import Footer from "@/components/footer"
 
 export default function Privacy() {
     return (
@@ -11,9 +11,9 @@ export default function Privacy() {
 		<p className="py-2">Last updated: 03/19/2025</p>
 		<div className="overview py-4">
 			<span>[[NOTE TO MERCHANT: Please read and remove/replace text wrapped in double square brackets like this]]
-</span>			<p className="py-2">This Privacy Policy describes how ____ (the "Site", "we", "us", or "our") collects, uses, and discloses your personal information when you visit, use our
-services, or make a purchase from www.website.com (the "Site") or otherwise communicate with us (collectively, the "Services"). For purposes of this
-Privacy Policy, "you" and "your" means you as the user of the Services, whether you are a customer, website visitor, or another individual whose
+</span>			<p className="py-2">This Privacy Policy describes how ____ (the &quot;Site&quot;, &quot;we&quot;, &quot;us&quot;, or &quot;our&quot;) collects, uses, and discloses your personal information when you visit, use our
+services, or make a purchase from www.website.com (the &quot;Site&quot;) or otherwise communicate with us (collectively, the &quot;Services&quot;). For purposes of this
+Privacy Policy, &quot;you&quot; and &quot;your&quot; means you as the user of the Services, whether you are a customer, website visitor, or another individual whose
 information we have collected pursuant to this Privacy Policy.</p>
 
 			<p className="py-2">Please read this Privacy Policy carefully. By using and accessing any of the Services, you agree to the collection, use, and disclosure of your
@@ -23,14 +23,14 @@ information as described in this Privacy Policy. If you do not agree to this Pri
 			<div className="changes py-4">
 			<h2 className="text-lg font-bold py-2">Changes to This Privacy Policy</h2>
 			<p className="py-2">We may update this Privacy Policy from time to time, including to reflect changes to our practices or for other operational, legal, or regulatory
-reasons. We will post the revised Privacy Policy on the Site, update the "Last updated" date and take any other steps required by applicable law.</p>
+reasons. We will post the revised Privacy Policy on the Site, update the &quot;Last updated&quot; date and take any other steps required by applicable law.</p>
 		</div>
 
 
 		<div className="personal-information py-4">
 			<h2 className="text-lg font-bold py-2">How We Collect and Use Your Personal Information</h2>
 			<p className="py-2">We may update this Privacy Policy from time to time, including to reflect changes to our practices or for other operational, legal, or regulatory
-reasons. We will post the revised Privacy Policy on the Site, update the "Last updated" date and take any other steps required by applicable law.</p>
+reasons. We will post the revised Privacy Policy on the Site, update the &quot;Last updated&quot; date and take any other steps required by applicable law.</p>
 			<p className="py-2">In addition to the specific uses set out below, we may use information we collect about you to communicate with you, provide the Services, comply
 with any applicable legal obligations, enforce any applicable terms of service, and to protect or defend the Services, our rights, and the rights of our
 users or others.</p>
@@ -39,7 +39,7 @@ users or others.</p>
 		<div className="py-4">
 			<h2 className="text-lg font-bold py-2">What Personal Information We Collect</h2>
 			<p className="py-2">The types of personal information we obtain about you depends on how you interact with our Site and use our Services. When we use the term
-"personal information", we are referring to information that identifies, relates to, describes or can be associated with you. The following sections
+&quot;personal information&quot;, we are referring to information that identifies, relates to, describes or can be associated with you. The following sections
 describe the categories and specific types of personal information we collect.</p>
 			<p className="py-2">Information We Collect Directly from You</p>
 			<p className="py-2">Information that you directly submit to us through our Services may include:</p>
@@ -50,8 +50,8 @@ through the Services. </p>
 
 		<div className="py-4">
 			<h2 className="text-lg font-bold py-2">Information We Obtain Through Cookies</h2>
-			<p className="py-2">We also automatically collect certain information about your interaction with the Services ("Usage Data"). To do this, we may use cookies, pixels and
-similar technologies ("Cookies"). Usage Data may include information about how you access and use our Site and your account, including device
+			<p className="py-2">We also automatically collect certain information about your interaction with the Services (&quot;Usage Data&quot;). To do this, we may use cookies, pixels and
+similar technologies (&quot;Cookies&quot;). Usage Data may include information about how you access and use our Site and your account, including device
 information, browser information, information about your network connection, your IP address and other information regarding your interaction
 with the Services.</p>
 		</div>
@@ -66,7 +66,7 @@ payment in order to fulfill your orders and provide you with products or service
 automatically collect certain information using online tracking technologies such as pixels, web beacons, software developer kits, third-party libraries,
 and cookies.</p>
 			<p className="py-2">Any information we obtain from third parties will be treated in accordance with this Privacy Policy. We are not responsible or liable for the accuracy of
-the information provided to us by third parties and are not responsible for any third party's policies or practices. For more information, see the
+the information provided to us by third parties and are not responsible for any third party&apos;s policies or practices. For more information, see the
 section below, Third Party Websites and Links</p>
 		</div>
 
@@ -91,13 +91,13 @@ legitimate interests in order to be responsive to you, to provide effective serv
 circumstances may include: </p>
 			<p className="py-2">- With vendors or other third parties who perform services on our behalf (e.g., IT management, payment processing, data analytics, customer support,
 cloud storage, fulfillment and shipping).<br/>- With business and marketing partners, including Shopify, to provide services and advertise to you. [[NOTE TO MERCHANT: INSERT THE FOLLOWING
-SENTENCE IF USING SHOPIFY'S AD SERVICES, SUCH AS SHOPIFY AUDIENCES]] [For example, we use Shopify to support personalized advertising with
+SENTENCE IF USING SHOPIFY&apos;S AD SERVICES, SUCH AS SHOPIFY AUDIENCES]] [For example, we use Shopify to support personalized advertising with
 third-party services]. Our business and marketing partners will use your information in accordance with their own privacy notices.<br/>- When you direct, request us or otherwise consent to our disclosure of certain information to third parties, such as to ship you products or through
 your use of social media widgets or login integrations, with your consent.<br/>- With our affiliates or otherwise within our corporate group, in our legitimate interests to run a successful business.<br/>- In connection with a business transaction such as a merger or bankruptcy, to comply with any applicable legal obligations (including to respond to
 subpoenas, search warrants and similar requests), to enforce any applicable terms of service, and to protect or defend the Services, our rights, and
 the rights of our users or others.</p>
 			<p className="py-2">We have, in the past 12 months disclosed the following categories of personal information and sensitive personal information (denoted by *) about
-users for the purposes set out above in "How we Collect and Use your Personal Information" and "How we Disclose Personal Information": </p>
+users for the purposes set out above in &quot;How we Collect and Use your Personal Information&quot; and &quot;How we Disclose Personal Information&quot;: </p>
 			<p className="py-2">Category:</p>
 			<p className="py-2">- Identifiers such as basic contact details and certain order and account information<br/>- Commercial information such as order information, shopping information and customer support information<br/>- Internet or other similar network activity, such as Usage Data</p>
 			<p className="py-2">Categories of Recipients: </p>
@@ -122,17 +122,17 @@ imply any endorsement of the content on such platforms or of their owners or ope
 		</div>
 
 		<div className="py-4">
-			<h2 className="text-lg font-bold py-2">Children's Data</h2>
+			<h2 className="text-lg font-bold py-2">Children&apos;s Data</h2>
 			<p className="py-2">The Services are not intended to be used by children, and we do not knowingly collect any personal information about children. If you are the parent
 or guardian of a child who has provided us with their personal information, you may contact us using the contact details set out below to request that
 it be deleted.</p>
-			<p className="py-2">As of the Effective Date of this Privacy Policy, we do not have actual knowledge that we "share" or "sell" (as those terms are defined in applicable law)
+			<p className="py-2">As of the Effective Date of this Privacy Policy, we do not have actual knowledge that we &quot;share&quot; or &quot;sell&quot; (as those terms are defined in applicable law)
 personal information of individuals under 16 years of age.</p>
 		</div>
 
 		<div className="py-4">
 			<h2 className="text-lg font-bold py-2">Security and Retention of Your Information</h2>
-			<p className="py-2">Please be aware that no security measures are perfect or impenetrable, and we cannot guarantee "perfect security." In addition, any information you
+			<p className="py-2">Please be aware that no security measures are perfect or impenetrable, and we cannot guarantee &quot;perfect security.&quot; In addition, any information you
 send to us may not be secure while in transit. We recommend that you do not use unsecure channels to communicate sensitive or confidential
 information to us.</p>
 			<p className="py-2">How long we retain your personal information depends on different factors, such as whether we need the information to maintain your account, to
@@ -144,7 +144,7 @@ provide the Services, comply with legal obligations, resolve disputes or enforce
 			<h2 className="text-lg font-bold py-2">Your Rights and Choices</h2>
 			<p className="py-2">Depending on where you live, you may have some or all of the rights listed below in relation to your personal information. However, these rights are
 not absolute, may apply only in certain circumstances and, in certain cases, we may decline your request as permitted by law.</p>
-			<p className="py-2">- Right to Access / Know. You may have a right to request access to personal information that we hold about you, including details relating to the ways
+			<p className="py-2"">- Right to Access / Know. You may have a right to request access to personal information that we hold about you, including details relating to the ways
 in which we use and share your information.<br/>- Right to Delete. You may have a right to request that we delete personal information we maintain about you.<br/>
 - Right to Correct. You may have a right to request that we correct inaccurate personal information we maintain about you.</p>
 		</div>
