@@ -30,23 +30,21 @@ export default function Hero({ className }: { className: string }) {
   const blocksY = useTransform(scrollYProgress, [0, 1], ["0%", "50%"]);
 
   return (
-    <div className="w-full h-[calc(100vh-6rem)] flex flex-col lg:flex-row justify-around lg:justify-center items-center w-full">
+    <div className="w-full min-h-fit max-h-[calc(100vh-5rem)] flex flex-col lg:flex-row justify-around lg:justify-center items-center w-full">
       <motion.div
-        className={`${className} flex-shrink-0 flex justify-center items-center flex-col w-7/8 lg:w-2/3 relative py-8`}
+        className={`${className} flex-shrink-0 flex justify-center items-center lg:items-start lg:px-16 flex-col w-7/8 lg:w-2/3 relative py-28`}
         variants={heroTextVariants}
         initial="hidden"
         whileInView="visible"
         transition={{ duration: 0.7, ease: "easeInOut" }}
       >
-        <h1 className="w-5/6 font-semibold text-3xl p-4 lg:text-5xl text-left z-10">____ is a software agency that grows brands digitally</h1>
-        <p className="w-5/6 text-lg lg:text-2xl text-left p-4">Experienced professionals ready to nurture the growth of your business. We hold your hand every step of the way, from design to deployment.</p>
-        <div className="w-5/6 text-left p-4">
-          <Button className="font-bold text-lg h-[3.5rem] rounded-3xl border-black w-full lg:w-[18rem]"><Link href="/contact">Get Started</Link></Button>
+        <h1 className="w-5/6 font-semibold text-4xl p-6 lg:text-5xl text-left z-10">____ is a software agency that grows brands digitally</h1>
+        <p className="w-5/6 lg:w-2/3 text-lg lg:text-2xl text-left p-5">Experienced professionals ready to nurture the growth of your business. We hold your hand every step of the way, from design to deployment.</p>
+        <div className="w-5/6 text-left p-5">
+          <Button variant={"custom"} className="font-bold text-lg h-[4rem] rounded-3xl border-black w-full lg:w-[24rem]"><Link href="/contact">Get Started</Link></Button>
         </div>
       </motion.div >
-      <div className="bg-black h-full w-full lg:hidden">
-        hello
-      </div>
+
       <motion.div
         className="hidden lg:flex lg:h-[calc(100vh-6rem)] lg:w-1/2 relative overflow-hidden"
         variants={heroImageVariants}

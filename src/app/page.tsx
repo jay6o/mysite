@@ -36,6 +36,11 @@ export default function Home() {
   // Define parallax effects for each image
   const toolsY = useTransform(scrollYProgress, [0, 1], ["0%", "-40%"]);
   const shape1Y = useTransform(scrollYProgress, [0, 1], ["0%", "-40%"]);
+	
+   const socialProofVariants = {
+	   hidden: {opacity: 0, y: 200},
+	   visible: {opacity:1, y: 0}
+   };
 
   const section2TextVariants = {
     hidden: { opacity: 0, x: 150 },
@@ -48,12 +53,43 @@ export default function Home() {
   };
 
   return (
-    <main data-scroll-speed="0.3" className="main w-[100vw]">
-      <Nav className={"h-[6rem] sticky top-0 z-30"} />
+    <main data-scroll-speed="0.3" className="main w-[100vw] bg-[#f2f2f2]">
+      <Nav className={"h-[5rem] lg:h-[6rem] sticky top-0 z-30"} />
       <Hero className="hero z-0"></Hero>
 
+      	{/* Social Proof (Section 2)*/}
+	{/* ADD TEXT ANIMATION */}
+	<motion.div 
+	  className="bg-[#c4c4ff] w-full grid grid-cols-2 gap-6 lg:flex lg:flex-row lg:justify-around lg:items-center pt-[6rem] lg:pt-[0]  overflow-auto h-[calc(100vh-32rem)] min-h-fit lg:h-[24rem]"
+	  variants={socialProofVariants}
+	  initial="hidden"
+	  whileInView="visible"
+	  transition={{ duration: 1.3, ease: "easeInOut" }}
+	>
+	  <div className="bg-[#c4c4ff] border-black border-l-2 ml-6 pl-6 h-1/2">
+	    <p className="text-3xl md:text-5xl lg:text-6xl font-semibold">60+</p>
+	    <br className="hidden lg:inline"/>
+	    <p className="font-semibold md:text-2xl leading-tight">Projects <br/>Developed</p>
+	  </div>
+	  <div className="bg-[#c4c4ff] border-black border-l-2 ml-6 pl-6 h-1/2">
+	    <p className="text-3xl md:text-5xl lg:text-6xl font-semibold">100%</p>
+	    <br className="hidden lg:inline"/>
+	    <p className="font-semibold md:text-2xl leading-tight">Job Success <br/>Rate</p>
+	  </div>
+	  <div className="bg-[#c4c4ff] border-black border-l-2 ml-6 pl-6 h-1/2">
+	    <p className="text-3xl md:text-5xl lg:text-6xl font-semibold">90+</p>
+	    <br className="hidden lg:inline"/>
+	    <p className="font-semibold md:text-2xl leading-tight">UIs/UXs <br/>Designed</p>
+	  </div>
+	  <div className="bg-[#c4c4ff] border-black border-l-2 ml-6 pl-6 h-1/2">
+	    <p className="text-3xl md:text-5xl lg:text-6xl font-semibold">30+</p>
+	    <br className="hidden lg:inline"/>
+	    <p className="font-semibold md:text-2xl leading-tight">Satisfied <br/>Clients</p>
+	  </div>
+	</motion.div>
+
       {/* Section 3 */}
-      <div className="flex justify-center items-center w-full h-screen">
+      <div className="flex justify-center items-center w-full h-[calc(100vh-50vh)] lg:h-screen">
         <div className="hidden lg:flex lg:h-2/3 lg:w-1/3 relative">
           <motion.div
             className="absolute bottom-0 left-20"
@@ -62,7 +98,7 @@ export default function Home() {
           </motion.div>
         </div>
         <div className="w-full lg:w-2/3 flex flex-col justify-center items-center">
-          <motion.div className="w-2/3 text-5xl"
+          <motion.div className="w-2/3 text-5xl flex flex-col justify-around items-center"
             variants={section2TextVariants}
             whileInView="visible"
             initial="hidden"
@@ -70,7 +106,8 @@ export default function Home() {
             transition={{ duration: 0.7, ease: "easeInOut" }}
           >
 
-            <p className="">World class engineers & designers turning dreams to reality</p>
+            <p className="text-2xl font-semibold">World class engineers & designers turning dreams to reality</p>
+	    <p className="text-lg">hello</p>
           </motion.div>
         </div>
       </div>
