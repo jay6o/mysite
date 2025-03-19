@@ -3,7 +3,7 @@ import Footer from "../../components/footer";
 export default function Contact() {
   return (
     <>
-      <Nav className={"h-[5rem] lg:h-[6rem]"} />
+      <Nav />
       <div className="min-h-fit h-[calc(100vh-6rem)] flex items-center">
         <div className="w-full lg:w-1/2 border-r border-r-2 border-black items-left">
           <div className="h-1/2 flex flex-col justify-around items-center">
@@ -18,7 +18,7 @@ export default function Contact() {
         <div className="hidden lg:w-1/2">
         </div>
       </div>
-      <Footer className="footer" />
+      <Footer />
     </>
   );
 };

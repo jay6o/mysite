@@ -185,7 +185,7 @@ export default function Home() {
 
 
       {/* Footer */}
-      <Footer className="footer" />
+      <Footer />
     </main>
   );
 }
