@@ -60,36 +60,91 @@ export default function Home() {
       	{/* Social Proof (Section 2)*/}
 	{/* ADD TEXT ANIMATION */}
 	<motion.div 
-	  className="bg-[#c4c4ff] w-full grid grid-cols-2 gap-6 lg:flex lg:flex-row lg:justify-around lg:items-center pt-[6rem] lg:pt-[0]  overflow-auto h-[calc(100vh-32rem)] min-h-fit lg:h-[24rem]"
+	  className="bg-[#c4c4ff] w-full grid grid-cols-2 gap-6 lg:grid lg:grid-cols-4 place-items-center lg:py-0 overflow-auto h-[calc(100vh-32rem)] min-h-fit lg:h-[24rem]"
 	  variants={socialProofVariants}
 	  initial="hidden"
 	  whileInView="visible"
 	  transition={{ duration: 1.3, ease: "easeInOut" }}
 	>
-	  <div className="bg-[#c4c4ff] border-black border-l-2 ml-6 pl-6 h-1/2">
-	    <p className="text-3xl md:text-5xl lg:text-6xl font-semibold">60+</p>
+	  <div className="bg-[#c4c4ff] pl-6 flex flex-col items-center justify-center h-full w-full">
+	    <p className="text-3xl md:text-5xl lg:text-6xl font-semibold text-left">60+</p>
 	    <br className="hidden lg:inline"/>
-	    <p className="font-semibold md:text-2xl leading-tight">Projects <br/>Developed</p>
+	    <p className="font-semibold text-xl md:text-2xl leading-tight text-center lg:pt-4">Projects <br/>Developed</p>
 	  </div>
-	  <div className="bg-[#c4c4ff] border-black border-l-2 ml-6 pl-6 h-1/2">
+	  <div className="bg-[#c4c4ff] border-black flex flex-col items-center justify-center h-full w-full">
 	    <p className="text-3xl md:text-5xl lg:text-6xl font-semibold">100%</p>
 	    <br className="hidden lg:inline"/>
-	    <p className="font-semibold md:text-2xl leading-tight">Job Success <br/>Rate</p>
+	    <p className="font-semibold text-xl md:text-2xl leading-tight text-center lg:pt-4">Job Success <br/>Rate</p>
 	  </div>
-	  <div className="bg-[#c4c4ff] border-black border-l-2 ml-6 pl-6 h-1/2">
+	  <div className="bg-[#c4c4ff] pl-6 flex flex-col items-center justify-center h-full w-full">
 	    <p className="text-3xl md:text-5xl lg:text-6xl font-semibold">90+</p>
 	    <br className="hidden lg:inline"/>
-	    <p className="font-semibold md:text-2xl leading-tight">UIs/UXs <br/>Designed</p>
+	    <p className="font-semibold text-xl md:text-2xl leading-tight text-center lg:pt-4">UIs/UXs <br/>Designed</p>
 	  </div>
-	  <div className="bg-[#c4c4ff] border-black border-l-2 ml-6 pl-6 h-1/2">
+	  <div className="bg-[#c4c4ff] pl-6 flex flex-col items-center justify-center h-full w-full">
 	    <p className="text-3xl md:text-5xl lg:text-6xl font-semibold">30+</p>
-	    <br className="hidden lg:inline"/>
-	    <p className="font-semibold md:text-2xl leading-tight">Satisfied <br/>Clients</p>
+	    <p className="font-semibold text-xl md:text-2xl leading-tight text-center lg:pt-4">Satisfied <br/>Clients</p>
 	  </div>
 	</motion.div>
 
+      {/*After hero (Section 2)*/}
+      <div className="section-2 justify-center lg:justify-start w-full flex flex-row min-h-fit py-36">
+        <div className="w-2/3 lg:w-1/2 flex flex-col justify-center items-center align-center">
+          <motion.div
+            className="w-5/6 lg:w-2/3 lg:pl-8"
+            variants={section3TextVariants}
+            whileInView="visible"
+            initial="hidden"
+            viewport={{ amount: 0.4 }}
+            transition={{ duration: 0.7, ease: "easeInOut" }}>
+            <h2 className="text-2xl lg:text-6xl font-semibold pb-4 lg:pb-8 text-left">Our Expertise</h2>
+
+            {/* TODO: add smooth transition to underline */}
+            <Accordion type="single" collapsible className="w-full min-h-fit">
+              <AccordionItem value="item-1">
+                <AccordionTrigger className="text-xl lg:text-[2.5rem] lg:pb-8 font-medium">Branding</AccordionTrigger>
+                <AccordionContent className="text-lg">
+                  Yes. It adheres to the WAI-ARIA design pattern.
+                </AccordionContent>
+              </AccordionItem>
+              <AccordionItem value="item-2">
+                <AccordionTrigger className="text-xl lg:text-[2.5rem] lg:pb-8 font-medium">Digital Products</AccordionTrigger>
+                <AccordionContent className="text-lg">
+                  Yes. It adheres to the WAI-ARIA design pattern.
+                </AccordionContent>
+              </AccordionItem>
+              <AccordionItem value="item-3">
+                <AccordionTrigger className="text-xl lg:text-[2.5rem] lg:pb-8 font-medium">Proprietary Software</AccordionTrigger>
+                <AccordionContent className="text-lg">
+                  Yes. It adheres to the WAI-ARIA design pattern.
+                </AccordionContent>
+              </AccordionItem>
+              <AccordionItem value="item-4">
+                <AccordionTrigger className="text-xl lg:text-[2.5rem] lg:pb-8 font-medium">SEO</AccordionTrigger>
+                <AccordionContent className="text-lg">
+                  Yes. It adheres to the WAI-ARIA design pattern.
+                </AccordionContent >
+              </AccordionItem>
+              <AccordionItem value="item-5">
+                <AccordionTrigger className="text-xl lg:text-[2.5rem] lg:pb-8 font-medium">Copywriting</AccordionTrigger>
+                <AccordionContent className="text-lg">
+                  Yes. It adheres to the WAI-ARIA design pattern.
+                </AccordionContent >
+              </AccordionItem>
+            </Accordion>
+          </motion.div>
+        </div>
+        <div className="hidden lg:flex justify-center items-center lg:w-1/2 h-[500px] w-[500px] relative">
+          <motion.div
+            className="absolute bottom-0 right-1/4"
+            style={{ y: shape1Y }}>
+            <Image className="shape-3d" src={shape1} alt="image" width={390} height={390} />
+          </motion.div>
+        </div>
+      </div>
+
       {/* Section 3 */}
-      <div className="flex justify-center items-center w-full h-[calc(100vh-50vh)] lg:h-screen">
+      <div className="flex justify-center items-center w-full py-36 lg:p-0 h-fit lg:h-screen">
         <div className="hidden lg:flex lg:h-2/3 lg:w-1/3 relative">
           <motion.div
             className="absolute bottom-0 left-20"
@@ -105,65 +160,8 @@ export default function Home() {
             viewport={{ amount: 0.4 }}
             transition={{ duration: 0.7, ease: "easeInOut" }}
           >
-
-            <p className="text-2xl font-semibold">World class engineers & designers turning dreams to reality</p>
-	    <p className="text-lg">hello</p>
-          </motion.div>
-        </div>
-      </div>
-
-      {/*After hero (Section 2)*/}
-      <div className="section-2 justify-center lg:justify-start w-full flex flex-row min-h-fit pb-36">
-        <div className="w-full lg:w-1/2 flex flex-col justify-center items-center align-center">
-          <motion.div
-            className="w-5/6 lg:w-2/3 lg:pl-8"
-            variants={section3TextVariants}
-            whileInView="visible"
-            initial="hidden"
-            viewport={{ amount: 0.4 }}
-            transition={{ duration: 0.7, ease: "easeInOut" }}>
-            <h2 className="text-5xl font-semibold pb-12 text-left">Our Expertise</h2>
-
-            {/* TODO: add smooth transition to underline */}
-            <Accordion type="single" collapsible className="w-full min-h-fit">
-              <AccordionItem value="item-1">
-                <AccordionTrigger className="text-3xl font-medium">Branding</AccordionTrigger>
-                <AccordionContent className="text-lg">
-                  Yes. It adheres to the WAI-ARIA design pattern.
-                </AccordionContent>
-              </AccordionItem>
-              <AccordionItem value="item-2">
-                <AccordionTrigger className="text-3xl font-medium">Digital Products</AccordionTrigger>
-                <AccordionContent className="text-lg">
-                  Yes. It adheres to the WAI-ARIA design pattern.
-                </AccordionContent>
-              </AccordionItem>
-              <AccordionItem value="item-3">
-                <AccordionTrigger className="text-3xl font-medium">Proprietary Software</AccordionTrigger>
-                <AccordionContent className="text-lg">
-                  Yes. It adheres to the WAI-ARIA design pattern.
-                </AccordionContent>
-              </AccordionItem>
-              <AccordionItem value="item-4">
-                <AccordionTrigger className="text-3xl font-medium">SEO</AccordionTrigger>
-                <AccordionContent className="text-lg">
-                  Yes. It adheres to the WAI-ARIA design pattern.
-                </AccordionContent >
-              </AccordionItem>
-              <AccordionItem value="item-5">
-                <AccordionTrigger className="text-3xl font-medium">Copywriting</AccordionTrigger>
-                <AccordionContent className="text-lg">
-                  Yes. It adheres to the WAI-ARIA design pattern.
-                </AccordionContent >
-              </AccordionItem>
-            </Accordion>
-          </motion.div>
-        </div>
-        <div className="hidden lg:flex justify-center items-center lg:w-1/2 h-[500px] w-[500px] relative">
-          <motion.div
-            className="absolute bottom-0 right-1/4"
-            style={{ y: shape1Y }}>
-            <Image className="shape-3d" src={shape1} alt="image" width={390} height={390} />
+	  <p className="text-2xl lg:text-5xl">This world is yours to make an impact on, and we will be your right hand</p>
+	  <p className="text-lg lg:text-2xl lg:w-2/3">Our world class designers and engineers are ready to bring your ideas to reality</p>
           </motion.div>
         </div>
       </div>
