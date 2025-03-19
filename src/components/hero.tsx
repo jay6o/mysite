@@ -30,7 +30,7 @@ export default function Hero({ className }: { className: string }) {
   const blocksY = useTransform(scrollYProgress, [0, 1], ["0%", "50%"]);
 
   return (
-    <div className="w-full min-h-fit max-h-[calc(100vh-5rem)] flex flex-col lg:flex-row justify-around lg:justify-center items-center w-full">
+    <div className="w-full min-h-fit max-h-[calc(100vh-6rem)] flex flex-col lg:flex-row justify-around lg:justify-center items-center w-full">
       <motion.div
         className={`${className} flex-shrink-0 flex justify-center items-center lg:items-start lg:px-16 flex-col w-7/8 lg:w-2/3 relative py-20`}
         variants={heroTextVariants}
