@@ -20,6 +20,8 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
         <Link href="/services" className="text-xl my-2"><p className="text-3xl py-2 transition-all duration:300 ease-in-out hover:underline">Services</p></Link>
         <Link href="/about" className="text-xl my-2 "><p className="text-3xl py-2 transition-all duration:300 ease-in-out hover:underline">About Us</p></Link>
         <Link href="/contact" className="text-xl my-2"><p className="text-3xl py-2 transition-all duration:300 ease-in-out hover:underline">Contact</p></Link>
+        <Link href="/privacy" className="text-xl my-2"><p className="text-3xl py-2 transition-all duration:300 ease-in-out hover:underline">Privacy Policy</p></Link>
+        <Link href="/terms" className="text-xl my-2"><p className="text-3xl py-2 transition-all duration:300 ease-in-out hover:underline">Terms of Services</p></Link>
       </nav>
     </div>
   );

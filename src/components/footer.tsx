@@ -1,9 +1,9 @@
 import Link from "next/link";
 import { Button } from "@/components/ui/button"
 
-export default function Footer({ className }: { className: string }) {
+export default function Footer() {
   return (
-    <div className={`${className} w-full border-t border-t-2 border-black`}>
+    <div className={`w-full border-t border-t-2 border-black`}>
       <div className="flex w-full p-8">
         <div className="w-full flex flex-col lg:flex-row justify-between lg:justify-around items-center">
           <div className="pb-12">
