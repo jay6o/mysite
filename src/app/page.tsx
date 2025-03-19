@@ -53,8 +53,8 @@ export default function Home() {
   };
 
   return (
-    <main data-scroll-speed="0.3" className="main w-[100vw] bg-[#f2f2f2]">
-      <Nav className={"h-[5rem] lg:h-[6rem] sticky top-0 z-30"} />
+    <main data-scroll-container data-scroll-speed="0.3" className="main w-[100vw] bg-[#f2f2f2]">
+      <Nav />
       <Hero className="hero z-0"></Hero>
 
       {/* Social Proof (Section 2)*/}
