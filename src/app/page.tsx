@@ -34,13 +34,8 @@ export default function Home() {
   const { scrollYProgress } = useScroll();
 
   // Define parallax effects for each image
-  const toolsY = useTransform(scrollYProgress, [0, 1], ["0%", "-40%"]);
-  const shape1Y = useTransform(scrollYProgress, [0, 1], ["0%", "-40%"]);
-
-  const socialProofVariants = {
-    hidden: { opacity: 0, y: 200 },
-    visible: { opacity: 1, y: 0 }
-  };
+  const toolsY = useTransform(scrollYProgress, [0, 1], ["0%", "-200%"]);
+  const shape1Y = useTransform(scrollYProgress, [0, 1], ["0%", "-220%"]);
 
   const section2TextVariants = {
     hidden: { opacity: 0, x: 150 },
@@ -61,12 +56,8 @@ export default function Home() {
 
       {/* Social Proof (Section 2)*/}
       {/* ADD TEXT ANIMATION */}
-      <motion.div
+      <div
         className="secondary w-full grid grid-cols-2 gap-6 lg:grid lg:grid-cols-4 place-items-center py-12 lg:py-0 overflow-auto h-[calc(100vh-32rem)] min-h-fit lg:h-[24rem]"
-        variants={socialProofVariants}
-        initial="hidden"
-        whileInView="visible"
-        transition={{ duration: 1.3, ease: "easeInOut" }}
       >
         <div className="secondary pl-6 flex flex-col items-center justify-center h-full w-full py-4">
           <p className="text-3xl md:text-5xl lg:text-6xl font-semibold text-center">60+</p>
@@ -87,58 +78,54 @@ export default function Home() {
           <p className="text-3xl md:text-5xl lg:text-6xl font-semibold">30+</p>
           <p className="font-semibold text-xl md:text-2xl leading-tight text-center lg:pt-4">Satisfied <br />Clients</p>
         </div>
-      </motion.div>
+      </div>
 
       {/*After hero (Section 2)*/}
       <div className="section-2 justify-center lg:justify-start w-full flex flex-row min-h-fit pt-36 pb-8">
         <div className="w-2/3 lg:w-1/2 flex flex-col justify-center items-center align-center">
-          <motion.div
+          <div
             className="w-5/6 lg:w-2/3 lg:pl-8"
-            variants={section3TextVariants}
-            whileInView="visible"
-            initial="hidden"
-            viewport={{ amount: 0.4 }}
-            transition={{ duration: 0.7, ease: "easeInOut" }}>
-            <h2 className="text-2xl lg:text-6xl font-semibold pb-4 lg:pb-8 text-left">Our Expertise</h2>
+          >
+            <h2 className="text-2xl lg:text-5xl font-semibold pb-4 lg:pb-8 text-left">Our Expertise</h2>
 
             {/* TODO: add smooth transition to underline */}
             <Accordion type="single" collapsible className="w-full min-h-fit">
               <AccordionItem value="item-1">
-                <AccordionTrigger className="text-xl lg:text-[2.5rem] lg:pb-8 font-medium">Branding</AccordionTrigger>
+                <AccordionTrigger className="text-xl lg:text-[2rem] lg:pb-4 font-medium">Branding</AccordionTrigger>
                 <AccordionContent className="text-lg">
                   Yes. It adheres to the WAI-ARIA design pattern.
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-2">
-                <AccordionTrigger className="text-xl lg:text-[2.5rem] lg:pb-8 font-medium">Digital Products</AccordionTrigger>
+                <AccordionTrigger className="text-xl lg:text-[2rem] lg:pb-4 font-medium">Digital Products</AccordionTrigger>
                 <AccordionContent className="text-lg">
                   Yes. It adheres to the WAI-ARIA design pattern.
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-3">
-                <AccordionTrigger className="text-xl lg:text-[2.5rem] lg:pb-8 font-medium">Proprietary Software</AccordionTrigger>
+                <AccordionTrigger className="text-xl lg:text-[2rem] lg:pb-4 font-medium">Proprietary Software</AccordionTrigger>
                 <AccordionContent className="text-lg">
                   Yes. It adheres to the WAI-ARIA design pattern.
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-4">
-                <AccordionTrigger className="text-xl lg:text-[2.5rem] lg:pb-8 font-medium">SEO</AccordionTrigger>
+                <AccordionTrigger className="text-xl lg:text-[2rem] lg:pb-4 font-medium">SEO</AccordionTrigger>
                 <AccordionContent className="text-lg">
                   Yes. It adheres to the WAI-ARIA design pattern.
                 </AccordionContent >
               </AccordionItem>
               <AccordionItem value="item-5">
-                <AccordionTrigger className="text-xl lg:text-[2.5rem] lg:pb-8 font-medium">Copywriting</AccordionTrigger>
+                <AccordionTrigger className="text-xl lg:text-[2rem] lg:pb-4 font-medium">Copywriting</AccordionTrigger>
                 <AccordionContent className="text-lg">
                   Yes. It adheres to the WAI-ARIA design pattern.
                 </AccordionContent >
               </AccordionItem>
             </Accordion>
-          </motion.div>
+          </div>
         </div>
         <div className="hidden lg:flex justify-center items-center lg:w-1/2 h-[500px] w-[500px] relative">
           <motion.div
-            className="absolute bottom-0 right-1/4"
+            className="absolute bottom-[-60%] right-1/4"
             style={{ y: shape1Y }}>
             <Image className="shape-3d" src={shape1} alt="image" width={390} height={390} />
           </motion.div>
@@ -149,7 +136,7 @@ export default function Home() {
       <div className="flex justify-center items-center w-full lg:p-0 h-fit lg:h-screen">
         <div className="hidden lg:flex lg:h-2/3 lg:w-1/3 relative">
           <motion.div
-            className="absolute bottom-0 left-20"
+            className="absolute bottom-[-110%] left-20"
             style={{ y: toolsY }}>
             <Image className="shape-3d" src={tools} alt="image" width={390} height={390} />
           </motion.div>
