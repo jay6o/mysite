@@ -62,28 +62,28 @@ export default function Home() {
       {/* Social Proof (Section 2)*/}
       {/* ADD TEXT ANIMATION */}
       <motion.div
-        className="bg-[#c4c4ff] w-full grid grid-cols-2 gap-6 lg:grid lg:grid-cols-4 place-items-center py-12 lg:py-0 overflow-auto h-[calc(100vh-32rem)] min-h-fit lg:h-[24rem]"
+        className="secondary w-full grid grid-cols-2 gap-6 lg:grid lg:grid-cols-4 place-items-center py-12 lg:py-0 overflow-auto h-[calc(100vh-32rem)] min-h-fit lg:h-[24rem]"
         variants={socialProofVariants}
         initial="hidden"
         whileInView="visible"
         transition={{ duration: 1.3, ease: "easeInOut" }}
       >
-        <div className="bg-[#c4c4ff] pl-6 flex flex-col items-center justify-center h-full w-full py-4">
+        <div className="secondary pl-6 flex flex-col items-center justify-center h-full w-full py-4">
           <p className="text-3xl md:text-5xl lg:text-6xl font-semibold text-center">60+</p>
           <br className="hidden lg:inline" />
           <p className="font-semibold text-xl md:text-2xl leading-tight text-center lg:pt-4">Projects <br />Developed</p>
         </div>
-        <div className="bg-[#c4c4ff] border-black flex flex-col items-center justify-center h-full w-full py-4">
+        <div className="secondary border-black flex flex-col items-center justify-center h-full w-full py-4">
           <p className="text-3xl md:text-5xl lg:text-6xl font-semibold text-center">100%</p>
           <br className="hidden lg:inline" />
           <p className="font-semibold text-xl md:text-2xl leading-tight text-center lg:pt-4">Job Success <br />Rate</p>
         </div>
-        <div className="bg-[#c4c4ff] pl-6 flex flex-col items-center justify-center h-full w-full py-4">
+        <div className="secondary pl-6 flex flex-col items-center justify-center h-full w-full py-4">
           <p className="text-3xl md:text-5xl lg:text-6xl font-semibold text-center">90+</p>
           <br className="hidden lg:inline" />
           <p className="font-semibold text-xl md:text-2xl leading-tight text-center lg:pt-4">UIs/UXs <br />Designed</p>
         </div>
-        <div className="bg-[#c4c4ff] pl-6 flex flex-col items-center justify-center h-full w-full py-4">
+        <div className="secondary pl-6 flex flex-col items-center justify-center h-full w-full py-4">
           <p className="text-3xl md:text-5xl lg:text-6xl font-semibold">30+</p>
           <p className="font-semibold text-xl md:text-2xl leading-tight text-center lg:pt-4">Satisfied <br />Clients</p>
         </div>

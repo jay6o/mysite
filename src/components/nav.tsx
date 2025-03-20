@@ -8,7 +8,7 @@ export default function Nav() {
   const [menuOn, setMenuOn] = useState<boolean>(false);
   const toggleMenu = () => setMenuOn(!menuOn);
   const closeMenu = () => setMenuOn(false);
-  
+
   return (
     <nav className="h-[5rem] lg:h-[6rem] fixed top-0 left-0 right-0 z-30 bg-transparent" data-scroll-sticky data-scroll-target="main">
       <div className="flex justify-row justify-between h-full items-center border-b-2 border-black bg-transparent bg-[#f2f2f2]/70 backdrop-blur-md">
