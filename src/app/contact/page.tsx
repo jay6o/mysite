@@ -1,5 +1,3 @@
-'use client'
-
 import Nav from "@/components/nav";
 import { Phone } from "lucide-react";
 import { Mail } from "lucide-react";
