@@ -42,6 +42,11 @@ export default function Home() {
     visible: { opacity: 1, x: 0 }
   };
 
+  const socialProofTextVariants = {
+    hidden: { opacity: 0, x: 0, y: -40 },
+    visible: { opacity: 1, x: 0, y: 0 }
+  }
+
 
   return (
     <main data-scroll-container data-scroll-speed="0.3" className="main w-[100vw] bg-[#f2f2f2]">
@@ -53,31 +58,61 @@ export default function Home() {
       {/* Social Proof (Section 2)*/}
       {/* ADD TEXT ANIMATION */}
       <div
-        className="secondary w-full grid grid-cols-2 gap-6 lg:grid lg:grid-cols-4 place-items-center py-12 lg:py-0 overflow-auto h-[calc(100vh-32rem)] min-h-fit lg:h-[24rem]"
+        className="bg-gradient-to-l from-[#917cdb] to-[#c4ceff]/60 w-full grid grid-cols-2 gap-6 lg:grid lg:grid-cols-4 place-items-center py-12 lg:py-0 overflow-auto h-[calc(100vh-32rem)] min-h-fit lg:h-[24rem]"
       >
-        <div className="secondary pl-6 flex flex-col items-center justify-center h-full w-full py-4">
-          <p className="text-3xl md:text-5xl lg:text-6xl font-semibold text-center">60+</p>
+        <div className="bg-transparent pl-6 flex flex-col items-center justify-center h-full w-full py-4">
+          <motion.p
+            className="text-3xl md:text-5xl lg:text-6xl font-semibold text-center"
+            variants={socialProofTextVariants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ amount: 0.4 }}
+            transition={{ duration: 0.9, ease: "easeInOut" }}
+          >60+
+          </motion.p>
           <br className="hidden lg:inline" />
           <p className="font-semibold text-xl md:text-2xl leading-tight text-center lg:pt-4">Projects <br />Developed</p>
         </div>
-        <div className="secondary border-black flex flex-col items-center justify-center h-full w-full py-4">
-          <p className="text-3xl md:text-5xl lg:text-6xl font-semibold text-center">100%</p>
+        <div className="bg-transparent border-black flex flex-col items-center justify-center h-full w-full py-4">
+          <motion.p
+            className="text-3xl md:text-5xl lg:text-6xl font-semibold text-center"
+            variants={socialProofTextVariants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ amount: 0.5 }}
+            transition={{ duration: 0.9, delay: 0.3, ease: "easeInOut" }}
+          >100%
+          </motion.p>
           <br className="hidden lg:inline" />
           <p className="font-semibold text-xl md:text-2xl leading-tight text-center lg:pt-4">Job Success <br />Rate</p>
         </div>
-        <div className="secondary pl-6 flex flex-col items-center justify-center h-full w-full py-4">
-          <p className="text-3xl md:text-5xl lg:text-6xl font-semibold text-center">90+</p>
+        <div className="bg-transparent pl-6 flex flex-col items-center justify-center h-full w-full py-4">
+          <motion.p
+            className="text-3xl md:text-5xl lg:text-6xl font-semibold text-center"
+            variants={socialProofTextVariants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ amount: 0.5 }}
+            transition={{ duration: 0.9, delay: 0.6, ease: "easeInOut" }}
+          >90+</motion.p>
           <br className="hidden lg:inline" />
           <p className="font-semibold text-xl md:text-2xl leading-tight text-center lg:pt-4">UIs/UXs <br />Designed</p>
         </div>
-        <div className="secondary pl-6 flex flex-col items-center justify-center h-full w-full py-4">
-          <p className="text-3xl md:text-5xl lg:text-6xl font-semibold">30+</p>
+        <div className="bg-transparent pl-6 flex flex-col items-center justify-center h-full w-full py-4">
+          <motion.p
+            className="text-3xl md:text-5xl lg:text-6xl font-semibold text-center"
+            variants={socialProofTextVariants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ amount: 0.5 }}
+            transition={{ duration: 0.9, delay: 0.9, ease: "easeInOut" }}
+          >30+</motion.p>
           <p className="font-semibold text-xl md:text-2xl leading-tight text-center lg:pt-4">Satisfied <br />Clients</p>
         </div>
       </div>
 
       {/*After hero (Section 2)*/}
-      <div className="section-2 justify-center lg:justify-start w-full flex flex-row min-h-fit pt-36 pb-8">
+      <div id="services" className="section-2 justify-center lg:justify-start w-full flex flex-row min-h-fit pt-36 pb-8">
         <div className="w-2/3 lg:w-1/2 flex flex-col justify-center items-center align-center">
           <div
             className="w-5/6 lg:w-2/3 lg:pl-8"
@@ -121,9 +156,9 @@ export default function Home() {
         </div>
         <div className="hidden lg:flex justify-center items-center lg:w-1/2 h-[500px] w-[500px] relative">
           <motion.div
-            className="absolute bottom-[-60%] right-1/4"
+            className="absolute bottom-[-60%] right-1/4 bg-transparent"
             style={{ y: shape1Y }}>
-            <Image className="shape-3d" src={shape1} alt="image" width={390} height={390} />
+            <Image className="shape-3d bg-transparent" src={shape1} alt="image" width={390} height={390} />
           </motion.div>
         </div>
       </div>
@@ -132,9 +167,9 @@ export default function Home() {
       <div className="flex justify-center items-center w-full lg:p-0 h-fit lg:h-screen">
         <div className="hidden lg:flex lg:h-2/3 lg:w-1/3 relative">
           <motion.div
-            className="absolute bottom-[-110%] left-20"
+            className="absolute lg:bottom-[-100%] left-20 bg-transparent"
             style={{ y: toolsY }}>
-            <Image className="shape-3d" src={tools} alt="image" width={390} height={390} />
+            <Image className="shape-3d bg-transparent" src={tools} alt="image" width={390} height={390} />
           </motion.div>
         </div>
         <div className="w-full h-full lg:w-2/3 flex flex-col justify-center items-center py-36 lg:p-0">

@@ -22,7 +22,7 @@ export default function Nav() {
         <div className="flex bg-transparent">
           {/* Desktop Nav Menu */}
           <ul className="hidden lg:flex items-center mr-12 bg-transparent">
-            <li className="mx-6 text-xl">Services</li>
+            <li className="mx-6 text-xl"><Link href="/#services">Services</Link></li>
             <li className="mx-6 text-xl"><Link href="/about">About Us</Link></li>
             <li className="mx-6 text-xl"><Link href="contact">Contact</Link></li>
           </ul>

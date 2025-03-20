@@ -10,7 +10,7 @@ interface MobileMenuProps {
 export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
   return (
     <div
-      className={`fixed top-0 right-0 h-screen w-[90vw] bg-[#f2f2f2] shadow-lg z-40 border-l border-black transform transition-transform duration-300 ease-in-out ${isOpen ? 'translate-x-0' : 'translate-x-full border-l'
+      className={`fixed top-0 right-0 h-screen w-[90vw] bg-[#f2f2f2] shadow-lg z-40 border-l border-black transform transition-transform duration-700 ease-in-out ${isOpen ? 'translate-x-0' : 'translate-x-full border-l'
         }`}
     >
       <nav className="flex flex-col p-8 h-full">
