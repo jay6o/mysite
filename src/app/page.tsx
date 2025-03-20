@@ -42,10 +42,6 @@ export default function Home() {
     visible: { opacity: 1, x: 0 }
   };
 
-  const section3TextVariants = {
-    hidden: { opacity: 0, x: 0, y: -100 },
-    visible: { opacity: 1, x: 0, y: 0 }
-  };
 
   return (
     <main data-scroll-container data-scroll-speed="0.3" className="main w-[100vw] bg-[#f2f2f2]">
