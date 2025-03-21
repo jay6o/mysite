@@ -102,33 +102,46 @@ export default function Home() {
             {/* TODO: add smooth transition to underline */}
             <Accordion type="single" collapsible className="w-full min-h-fit">
               <AccordionItem value="item-1">
-                <AccordionTrigger className="text-xl lg:text-[2.5rem] lg:pb-8 font-medium">Branding</AccordionTrigger>
+                <AccordionTrigger className="text-xl lg:text-[2.5rem] lg:pb-8 font-medium">Web Development</AccordionTrigger>
                 <AccordionContent className="text-lg">
-                  Yes. It adheres to the WAI-ARIA design pattern.
+                  - Custom coded websites
+                  - Custom animations
+                  - Ecommerce
+                  - Agencies
+                  - Businesses
+                  - Portfolios
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-2">
-                <AccordionTrigger className="text-xl lg:text-[2.5rem] lg:pb-8 font-medium">Digital Products</AccordionTrigger>
+                <AccordionTrigger className="text-xl lg:text-[2.5rem] lg:pb-8 font-medium">Proprietary Software</AccordionTrigger>
                 <AccordionContent className="text-lg">
-                  Yes. It adheres to the WAI-ARIA design pattern.
+                  - Software applications
+                  - Mobile apps
+                  - Data analysis
+                  - Data scrapers
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-3">
-                <AccordionTrigger className="text-xl lg:text-[2.5rem] lg:pb-8 font-medium">Proprietary Software</AccordionTrigger>
+                <AccordionTrigger className="text-xl lg:text-[2.5rem] lg:pb-8 font-medium">SEO</AccordionTrigger>
                 <AccordionContent className="text-lg">
-                  Yes. It adheres to the WAI-ARIA design pattern.
+                  - Optimize websites for greater organic traffic
+                  - Refactor code for easier parsing by web crawlers
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-4">
-                <AccordionTrigger className="text-xl lg:text-[2.5rem] lg:pb-8 font-medium">SEO</AccordionTrigger>
+                <AccordionTrigger className="text-xl lg:text-[2.5rem] lg:pb-8 font-medium">Copywriting</AccordionTrigger>
                 <AccordionContent className="text-lg">
-                  Yes. It adheres to the WAI-ARIA design pattern.
+                  - Brand image
+                  - Appealing copy for possible/existing clients
+                  - Attention grabbing messages
                 </AccordionContent >
               </AccordionItem>
               <AccordionItem value="item-5">
-                <AccordionTrigger className="text-xl lg:text-[2.5rem] lg:pb-8 font-medium">Copywriting</AccordionTrigger>
+                <AccordionTrigger className="text-xl lg:text-[2.5rem] lg:pb-8 font-medium">Digital Marketing</AccordionTrigger>
                 <AccordionContent className="text-lg">
-                  Yes. It adheres to the WAI-ARIA design pattern.
+                  - Increase traffic
+                  - Marketing campaigns
+                  - Social media presence
                 </AccordionContent >
               </AccordionItem>
             </Accordion>
@@ -160,8 +173,8 @@ export default function Home() {
             viewport={{ amount: 0.4 }}
             transition={{ duration: 0.7, ease: "easeInOut" }}
           >
-            <p className="text-2xl lg:text-5xl pb-8">This world is yours to make an impact on, and we will help you achieve your dreams</p>
-            <p className="text-lg lg:text-2xl lg:w-5/6">Our world class designers and engineers have years of industry experience, and are sure to bring any idea you have to fruition</p>
+            <p className="text-2xl lg:text-5xl pb-8">We believe that everyone has the power to create change in this world, and our job is to foster the environment for you</p>
+            <p className="text-lg lg:text-2xl lg:w-5/6">Our world class designers, engineers, and marketing professionals have years of industry experience, and are sure to bring any idea you have to fruition</p>
           </motion.div>
         </div>
       </div>
