@@ -11,7 +11,8 @@ interface MobileMenuProps {
 export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
   const path = usePathname();
   const closeMenuSamePage = (to: string, as: string) => {
-    to === as ? onClose() : null;
+    if (to === as)
+      onClose();
   }
   return (
     <div
