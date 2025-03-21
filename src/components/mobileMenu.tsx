@@ -20,7 +20,7 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
         }`}
     >
       <nav className="flex flex-col p-8 h-full">
-        <button onClick={onClose} className="self-end mb-8">
+        <button onClick={onClose} id="menu-close-button" aria-label="menu-close-button" className="self-end mb-8">
           <X size={42} />
         </button>
         <Link href="/#services" onClick={() => closeMenuSamePage("/", path)} className="text-xl my-2"><p className="text-3xl py-2 transition-all duration:300 ease-in-out hover:underline">Services</p></Link>
