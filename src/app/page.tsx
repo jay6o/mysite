@@ -112,7 +112,7 @@ export default function Home() {
       </div>
 
       {/*After hero (Section 2)*/}
-      <div id="services" className="section-2 justify-center lg:justify-start w-full flex flex-row min-h-fit pt-36 pb-8">
+      <div id="services" className="section-2 justify-center lg:justify-start w-full flex flex-row min-h-fit py-12 lg:pt-36 lg:pb-8">
         <div className="w-2/3 lg:w-1/2 flex flex-col justify-center items-center align-center">
           <div
             className="w-5/6 lg:w-2/3 lg:pl-8"
@@ -172,7 +172,7 @@ export default function Home() {
             <Image className="shape-3d bg-transparent" src={tools} alt="image" width={390} height={390} />
           </motion.div>
         </div>
-        <div className="w-full h-full lg:w-2/3 flex flex-col justify-center items-center py-36 lg:p-0">
+        <div className="w-full h-full lg:w-2/3 flex flex-col justify-center items-center py-12 pb-28 lg:p-0">
           <motion.div className="w-2/3 text-5xl flex flex-col justify-center items-start"
             variants={section2TextVariants}
             whileInView="visible"
@@ -180,8 +180,8 @@ export default function Home() {
             viewport={{ amount: 0.4 }}
             transition={{ duration: 0.7, ease: "easeInOut" }}
           >
-            <p className="text-2xl lg:text-5xl pb-8">This world is yours to make an impact on, and we will help you achieve your dreams</p>
-            <p className="text-lg lg:text-2xl lg:w-5/6">Our world class designers and engineers have years of industry experience, and are sure to bring any idea you have to fruition</p>
+            <p className="text-xl font-semibold lg:text-5xl pb-4 lg:pb-8">This world is yours to make an impact on, and we will help you achieve your dreams</p>
+            <p className="text-base lg:text-2xl lg:w-5/6">Our world class designers and engineers have years of industry experience, and are sure to bring any idea you have to fruition</p>
           </motion.div>
         </div>
       </div>
