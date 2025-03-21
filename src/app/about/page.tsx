@@ -1,5 +1,11 @@
+import type { Metadata } from "next";
 import Nav from "@/components/nav";
 import Footer from "@/components/footer";
+
+export const metadata: Metadata = {
+  title: "About | SoftByte",
+  description: "SoftByte is a leading agency in the software and web development space, as well as the social media and digital marketing space."
+};
 
 export default function About() {
   return (

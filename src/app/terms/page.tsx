@@ -1,5 +1,11 @@
+import type { Metadata } from "next";
 import Nav from "@/components/nav";
 import Footer from "@/components/footer";
+
+export const metadata: Metadata = {
+	title: "Terms of Service | SoftByte",
+	description: "SoftByte is a leading agency in the software and web development space, as well as the social media and digital marketing space."
+};
 
 export default function Terms() {
 	return (
@@ -10,7 +16,7 @@ export default function Terms() {
 					<h1 className="text-3xl font-bold text-center py-12">Terms of Service</h1>
 					<div className="overview py-4">
 						<h2 className="text-lg font-bold py-2">OVERVIEW</h2>
-						<p className="py-2">This website is operated by ____. Throughout the site, the terms &quot;we&quot;, &quot;us&quot; and &quot;our&quot; refer to ____. ____ offers this website, including all information,
+						<p className="py-2">This website is operated by SoftByte. Throughout the site, the terms &quot;we&quot;, &quot;us&quot; and &quot;our&quot; refer to SoftByte. SoftByte offers this website, including all information,
 							tools and Services available from this site to you, the user, conditioned upon your acceptance of all terms, conditions, policies and notices stated here.</p>
 						<p className="py-2">By visiting our site and/ or purchasing something from us, you engage in our &quot;Service&quot; and agree to be bound by the following terms and conditions
 							(&quot;Terms of Service&quot;, &quot;Terms&quot;), including those additional terms and conditions and policies referenced herein and/or available by hyperlink. These
@@ -90,8 +96,7 @@ export default function Terms() {
 
 					<div className="personal-info py-4">
 						<h2 className="text-lg font-bold py-2">PERSONAL INFORMATION</h2>
-						<p className="py-2">Your submission of personal information through the store is governed by our Privacy Policy. To view our Privacy Policy, please see [LINK TO PRIVACY
-							POLICY]</p>
+						<p className="py-2">Your submission of personal information through the store is governed by our Privacy Policy. To view our Privacy Policy, please see <a href="/privacy" className="underline font-medium">our privacy policy</a></p>
 					</div>
 
 					<div className="inaccuracies py-4">
@@ -130,7 +135,7 @@ export default function Terms() {
 							through the service are (except as expressly stated by us) provided &apos;as is&apos; and &apos;as available&apos; for your use, without any representation, warranties or
 							conditions of any kind, either express or implied, including all implied warranties or conditions of merchantability, merchantable quality, fitness for a
 							particular purpose, durability, title, and non-infringement.
-							In no case shall ____, our directors, officers, employees, affiliates, agents, contractors, interns, suppliers, service providers or licensors be liable for any
+							In no case shall SoftByte, our directors, officers, employees, affiliates, agents, contractors, interns, suppliers, service providers or licensors be liable for any
 							injury, loss, claim, or any direct, indirect, incidental, punitive, special, or consequential damages of any kind, including, without limitation lost profits,
 							lost revenue, lost savings, loss of data, replacement costs, or any similar damages, whether based in contract, tort (including negligence), strict
 							liability or otherwise, arising from your use of any of the service or any products procured using the service, or for any other claim related in any way
@@ -143,7 +148,7 @@ export default function Terms() {
 
 					<div className="indemnification py-4">
 						<h2 className="text-lg font-bold py-2">INDEMNIFICATION</h2>
-						<p className="py-2">You agree to indemnify, defend and hold harmless ____ and our parent, subsidiaries, affiliates, partners, officers, directors, agents, contractors,
+						<p className="py-2">You agree to indemnify, defend and hold harmless SoftByte and our parent, subsidiaries, affiliates, partners, officers, directors, agents, contractors,
 							licensors, service providers, subcontractors, suppliers, interns and employees, harmless from any claim or demand, including reasonable attorneys’
 							fees, made by any third-party due to or arising out of your breach of these Terms of Service or the documents they incorporate by reference, or your
 							violation of any law or the rights of a third-party.</p>

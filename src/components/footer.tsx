@@ -30,8 +30,8 @@ export default function Footer() {
       <div className="w-full">
         <ul className="flex justify-center">
           <li className="px-8 py-4"><p className="text-lg">© 2025 SoftByte</p></li>
-          <li className="px-8 py-4"><Link href="privacy"><p className="text-lg text-black/50 hover:underline">privacy policy</p></Link></li>
-          <li className="px-8 py-4"><Link href="terms"><p className="text-lg text-black/50 hover:underline">terms of service</p></Link></li>
+          <li className="px-8 py-4"><Link href="privacy"><p className="text-lg text-black/80 hover:underline">privacy policy</p></Link></li>
+          <li className="px-8 py-4"><Link href="terms"><p className="text-lg text-black/80 hover:underline">terms of service</p></Link></li>
         </ul>
       </div>
     </div >

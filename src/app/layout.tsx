@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "SoftByte",
-  description: "B2B software development agency",
+  description: "B2B Software Development, Web Design, Web Development, Digital Marketing, & Social Media Marketing agency. Servicing businesses, professionals, & individuals for their technology needs.",
 };
 
 export default function RootLayout({
