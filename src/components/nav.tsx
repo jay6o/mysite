@@ -14,8 +14,8 @@ export default function Nav() {
       <div className="flex justify-row justify-between h-full items-center border-b-2 border-black bg-transparent bg-[#f2f2f2]/70 backdrop-blur-md">
         <div className="ml-12 bg-transparent">
           <Link href="/">
-            <h1 className="font-bold text-xl bg-transparent">
-              LOGO
+            <h1 className="font-bold text-xl lg:text-2xl bg-transparent">
+              SoftByte
             </h1>
           </Link>
         </div>

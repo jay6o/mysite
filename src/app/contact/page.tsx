@@ -16,11 +16,11 @@ export default function Contact() {
         <div className="w-2/3 lg:w-1/4 h-1/3 lg:h-[30%] max-h-[48rem] flex flex-col justify-around border rounded-xl border-black/30 items-center shadow-2xl">
           <div className="secondary h-[40%] w-[90%] border border-black/15 rounded-xl shadow-lg flex items-center px-[5%]">
             <Phone className="h-[2rem] w-[2rem] md:h-[2.8rem] md:w-[4rem]" />
-            <span className="px-4 text-[1rem] md:text-[1.5rem] lg:text-[1.2rem]">804-xxx-xxxx</span>
+            <span className="px-4 text-[1rem] md:text-[1.5rem] lg:text-[1.2rem]">804-385-4576</span>
           </div>
           <div className="secondary h-[40%] w-[90%] border border-black/15 rounded-xl shadow-lg flex items-center px-[5%]">
             <Mail className="h-[2rem] w-[2rem] md:h-[2.8rem] md:w-[4rem]" />
-            <span className="px-4 text-[1rem] md:text-[1.5rem] lg:text-[1.2rem]">email@email.com</span>
+            <span className="px-4 text-[1rem] md:text-[1.5rem] lg:text-[1.2rem]">jurias6@proton.me</span>
           </div>
         </div>
       </div>

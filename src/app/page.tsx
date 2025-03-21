@@ -122,38 +122,51 @@ export default function Home() {
             {/* TODO: add smooth transition to underline */}
             <Accordion type="single" collapsible className="w-full min-h-fit">
               <AccordionItem value="item-1">
-                <AccordionTrigger className="text-xl lg:text-[2rem] lg:pb-4 font-medium">Branding</AccordionTrigger>
+                <AccordionTrigger className="text-xl lg:text-[2.5rem] lg:pb-8 font-medium">Web Development</AccordionTrigger>
                 <AccordionContent className="text-lg">
-                  Yes. It adheres to the WAI-ARIA design pattern.
+                  - Custom coded websites
+                  - Custom animations
+                  - Ecommerce
+                  - Agencies
+                  - Businesses
+                  - Portfolios
                 </AccordionContent>
-              </AccordionItem>
+              </AccordionItem >
               <AccordionItem value="item-2">
-                <AccordionTrigger className="text-xl lg:text-[2rem] lg:pb-4 font-medium">Digital Products</AccordionTrigger>
+                <AccordionTrigger className="text-xl lg:text-[2.5rem] lg:pb-8 font-medium">Proprietary Software</AccordionTrigger>
                 <AccordionContent className="text-lg">
-                  Yes. It adheres to the WAI-ARIA design pattern.
+                  - Software applications
+                  - Mobile apps
+                  - Data analysis
+                  - Data scrapers
                 </AccordionContent>
-              </AccordionItem>
+              </AccordionItem >
               <AccordionItem value="item-3">
-                <AccordionTrigger className="text-xl lg:text-[2rem] lg:pb-4 font-medium">Proprietary Software</AccordionTrigger>
+                <AccordionTrigger className="text-xl lg:text-[2.5rem] lg:pb-8 font-medium">SEO</AccordionTrigger>
                 <AccordionContent className="text-lg">
-                  Yes. It adheres to the WAI-ARIA design pattern.
+                  - Optimize websites for greater organic traffic
+                  - Refactor code for easier parsing by web crawlers
                 </AccordionContent>
-              </AccordionItem>
+              </AccordionItem >
               <AccordionItem value="item-4">
-                <AccordionTrigger className="text-xl lg:text-[2rem] lg:pb-4 font-medium">SEO</AccordionTrigger>
+                <AccordionTrigger className="text-xl lg:text-[2.5rem] lg:pb-8 font-medium">Copywriting</AccordionTrigger>
                 <AccordionContent className="text-lg">
-                  Yes. It adheres to the WAI-ARIA design pattern.
+                  - Brand image
+                  - Appealing copy for possible/existing clients
+                  - Attention grabbing messages
                 </AccordionContent >
-              </AccordionItem>
+              </AccordionItem >
               <AccordionItem value="item-5">
-                <AccordionTrigger className="text-xl lg:text-[2rem] lg:pb-4 font-medium">Copywriting</AccordionTrigger>
+                <AccordionTrigger className="text-xl lg:text-[2.5rem] lg:pb-8 font-medium">Digital Marketing</AccordionTrigger>
                 <AccordionContent className="text-lg">
-                  Yes. It adheres to the WAI-ARIA design pattern.
+                  - Increase traffic
+                  - Marketing campaigns
+                  - Social media presence
                 </AccordionContent >
-              </AccordionItem>
-            </Accordion>
-          </div>
-        </div>
+              </AccordionItem >
+            </Accordion >
+          </div >
+        </div >
         <div className="hidden lg:flex justify-center items-center lg:w-1/2 h-[500px] w-[500px] relative">
           <motion.div
             className="absolute bottom-[-60%] right-1/4 bg-transparent"
@@ -161,10 +174,10 @@ export default function Home() {
             <Image className="shape-3d bg-transparent" src={shape1} alt="image" width={390} height={390} />
           </motion.div>
         </div>
-      </div>
+      </div >
 
       {/* Section 3 */}
-      <div className="flex justify-center items-center w-full lg:p-0 h-fit lg:h-screen">
+      < div className="flex justify-center items-center w-full lg:p-0 h-fit lg:h-screen" >
         <div className="hidden lg:flex lg:h-2/3 lg:w-1/3 relative">
           <motion.div
             className="absolute lg:bottom-[-100%] left-20 bg-transparent"
@@ -180,11 +193,11 @@ export default function Home() {
             viewport={{ amount: 0.4 }}
             transition={{ duration: 0.7, ease: "easeInOut" }}
           >
-            <p className="text-xl font-semibold lg:text-5xl pb-4 lg:pb-8">This world is yours to make an impact on, and we will help you achieve your dreams</p>
-            <p className="text-base lg:text-2xl lg:w-5/6">Our world class designers and engineers have years of industry experience, and are sure to bring any idea you have to fruition</p>
-          </motion.div>
-        </div>
-      </div>
+            <p className="text-2xl lg:text-5xl pb-8">We believe that everyone has the power to create change in this world, and our goal is to foster that environment for you</p>
+            <p className="text-lg lg:text-2xl lg:w-5/6">Our world class designers, engineers, and marketing professionals have years of industry experience, and are sure to bring any idea you have to fruition</p>
+          </motion.div >
+        </div >
+      </div >
 
       {/*
       <div className="mission flex flex-col bg-black">
@@ -206,6 +219,6 @@ export default function Home() {
 
       {/* Footer */}
       <Footer />
-    </main>
+    </main >
   );
 }
