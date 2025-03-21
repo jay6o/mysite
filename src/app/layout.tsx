@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "My Company",
+  title: "SoftByte",
   description: "B2B software development agency",
 };
 
