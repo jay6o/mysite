@@ -112,7 +112,7 @@ export default function Home() {
       </div>
 
       {/*After hero (Section 2)*/}
-      <div id="services" className="section-2 justify-center lg:justify-start w-full flex flex-row min-h-fit py-12 lg:pt-36 lg:pb-8">
+      <div id="services" className="section-2 justify-center lg:justify-start w-full flex flex-row min-h-fit py-12 pt-24 lg:pt-36 lg:pb-8">
         <div className="w-2/3 lg:w-1/2 flex flex-col justify-center items-center align-center">
           <div
             className="w-5/6 lg:w-2/3 lg:pl-8"
