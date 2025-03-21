@@ -1,7 +1,13 @@
+import type { Metadata } from "next";
 import Nav from "@/components/nav";
 import { Phone } from "lucide-react";
 import { Mail } from "lucide-react";
 import Footer from "@/components/footer";
+
+export const metadata: Metadata = {
+  title: "Contact | SoftByte",
+  description: "Get in contact with one of our specialists about your website application or marketing needs."
+};
 
 export default function Contact() {
   return (

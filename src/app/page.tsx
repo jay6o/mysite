@@ -122,46 +122,46 @@ export default function Home() {
             {/* TODO: add smooth transition to underline */}
             <Accordion type="single" collapsible className="w-full min-h-fit">
               <AccordionItem value="item-1">
-                <AccordionTrigger className="text-xl lg:text-[2.5rem] lg:pb-8 font-medium">Web Development</AccordionTrigger>
-                <AccordionContent className="text-lg">
-                  - Custom coded websites
-                  - Custom animations
-                  - Ecommerce
-                  - Agencies
-                  - Businesses
-                  - Portfolios
+                <AccordionTrigger className="text-xl lg:text-[2.1rem] lg:pb-8 font-medium">Web Development</AccordionTrigger>
+                <AccordionContent className="text-lg lg:text-xl font-medium">
+                  - Custom coded websites<br />
+                  - Custom animations<br />
+                  - Ecommerce<br />
+                  - Agencies<br />
+                  - Businesses<br />
+                  - Portfolios<br />
                 </AccordionContent>
               </AccordionItem >
               <AccordionItem value="item-2">
-                <AccordionTrigger className="text-xl lg:text-[2.5rem] lg:pb-8 font-medium">Proprietary Software</AccordionTrigger>
-                <AccordionContent className="text-lg">
-                  - Software applications
-                  - Mobile apps
-                  - Data analysis
-                  - Data scrapers
+                <AccordionTrigger className="text-xl lg:text-[2.1rem] lg:pb-8 font-medium">Proprietary Software</AccordionTrigger>
+                <AccordionContent className="text-lg lg:text-xl font-medium">
+                  - Software applications<br />
+                  - Mobile apps<br />
+                  - Data analysis<br />
+                  - Data scrapers<br />
                 </AccordionContent>
               </AccordionItem >
               <AccordionItem value="item-3">
-                <AccordionTrigger className="text-xl lg:text-[2.5rem] lg:pb-8 font-medium">SEO</AccordionTrigger>
-                <AccordionContent className="text-lg">
-                  - Optimize websites for greater organic traffic
-                  - Refactor code for easier parsing by web crawlers
+                <AccordionTrigger className="text-xl lg:text-[2.1rem] lg:pb-8 font-medium">SEO</AccordionTrigger>
+                <AccordionContent className="text-lg lg:text-xl font-medium">
+                  - Optimize websites for greater organic traffic<br />
+                  - Refactor code for easier parsing by web crawlers<br />
                 </AccordionContent>
               </AccordionItem >
               <AccordionItem value="item-4">
-                <AccordionTrigger className="text-xl lg:text-[2.5rem] lg:pb-8 font-medium">Copywriting</AccordionTrigger>
-                <AccordionContent className="text-lg">
-                  - Brand image
-                  - Appealing copy for possible/existing clients
-                  - Attention grabbing messages
+                <AccordionTrigger className="text-xl lg:text-[2.1rem] lg:pb-8 font-medium">Copywriting</AccordionTrigger>
+                <AccordionContent className="text-lg lg:text-xl font-medium">
+                  - Brand image<br />
+                  - Appealing copy for possible/existing clients<br />
+                  - Attention grabbing messages<br />
                 </AccordionContent >
               </AccordionItem >
               <AccordionItem value="item-5">
-                <AccordionTrigger className="text-xl lg:text-[2.5rem] lg:pb-8 font-medium">Digital Marketing</AccordionTrigger>
-                <AccordionContent className="text-lg">
-                  - Increase traffic
-                  - Marketing campaigns
-                  - Social media presence
+                <AccordionTrigger className="text-xl lg:text-[2.1rem] lg:pb-8 font-medium">Digital Marketing</AccordionTrigger>
+                <AccordionContent className="text-lg lg:text-xl font-medium">
+                  - Increase traffic<br />
+                  - Marketing campaigns<br />
+                  - Social media presence<br />
                 </AccordionContent >
               </AccordionItem >
             </Accordion >
@@ -193,8 +193,8 @@ export default function Home() {
             viewport={{ amount: 0.4 }}
             transition={{ duration: 0.7, ease: "easeInOut" }}
           >
-            <p className="text-2xl lg:text-5xl pb-8">We believe that everyone has the power to create change in this world, and our goal is to foster that environment for you</p>
-            <p className="text-lg lg:text-2xl lg:w-5/6">Our world class designers, engineers, and marketing professionals have years of industry experience, and are sure to bring any idea you have to fruition</p>
+            <p className="text-2xl lg:text-5xl pb-8">Dream on, we&apos;ll build it</p>
+            <p className="text-lg lg:text-2xl lg:w-5/6">Just give us your ideas, and our experienced professionals will build it for you. We keep you in the know about every move we make so that you are 100% satisfied with our service.</p>
           </motion.div >
         </div >
       </div >

@@ -1,5 +1,11 @@
+import type { Metadata } from "next";
 import Nav from "@/components/nav";
 import Footer from "@/components/footer"
+
+export const metadata: Metadata = {
+	title: "Privacy Policy | SoftByte",
+	description: "SoftByte is a leading agency in the software and web development space, as well as the social media and digital marketing space."
+};
 
 export default function Privacy() {
 	return (
@@ -10,8 +16,7 @@ export default function Privacy() {
 					<h1 className="text-3xl font-bold text-center py-12">Privacy Policy</h1>
 					<p className="py-2">Last updated: 03/19/2025</p>
 					<div className="overview py-4">
-						<span>[[NOTE TO MERCHANT: Please read and remove/replace text wrapped in double square brackets like this]]
-						</span>			<p className="py-2">This Privacy Policy describes how ____ (the &quot;Site&quot;, &quot;we&quot;, &quot;us&quot;, or &quot;our&quot;) collects, uses, and discloses your personal information when you visit, use our
+						<p className="py-2">This Privacy Policy describes how SoftByte (the &quot;Site&quot;, &quot;we&quot;, &quot;us&quot;, or &quot;our&quot;) collects, uses, and discloses your personal information when you visit, use our
 							services, or make a purchase from www.website.com (the &quot;Site&quot;) or otherwise communicate with us (collectively, the &quot;Services&quot;). For purposes of this
 							Privacy Policy, &quot;you&quot; and &quot;your&quot; means you as the user of the Services, whether you are a customer, website visitor, or another individual whose
 							information we have collected pursuant to this Privacy Policy.</p>
@@ -90,9 +95,7 @@ export default function Privacy() {
 						<p className="py-2">In certain circumstances, we may disclose your personal information to third parties for legitimate purposes subject to this Privacy Policy. Such
 							circumstances may include: </p>
 						<p className="py-2">- With vendors or other third parties who perform services on our behalf (e.g., IT management, payment processing, data analytics, customer support,
-							cloud storage, fulfillment and shipping).<br />- With business and marketing partners, including Shopify, to provide services and advertise to you. [[NOTE TO MERCHANT: INSERT THE FOLLOWING
-							SENTENCE IF USING SHOPIFY&apos;S AD SERVICES, SUCH AS SHOPIFY AUDIENCES]] [For example, we use Shopify to support personalized advertising with
-							third-party services]. Our business and marketing partners will use your information in accordance with their own privacy notices.<br />- When you direct, request us or otherwise consent to our disclosure of certain information to third parties, such as to ship you products or through
+							cloud storage, fulfillment and shipping).<br />- With business and marketing partners, including Shopify, to provide services and advertise to you. Our business and marketing partners will use your information in accordance with their own privacy notices.<br />- When you direct, request us or otherwise consent to our disclosure of certain information to third parties, such as to ship you products or through
 							your use of social media widgets or login integrations, with your consent.<br />- With our affiliates or otherwise within our corporate group, in our legitimate interests to run a successful business.<br />- In connection with a business transaction such as a merger or bankruptcy, to comply with any applicable legal obligations (including to respond to
 							subpoenas, search warrants and similar requests), to enforce any applicable terms of service, and to protect or defend the Services, our rights, and
 							the rights of our users or others.</p>
