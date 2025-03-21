@@ -34,70 +34,90 @@ export default function Home() {
   const { scrollYProgress } = useScroll();
 
   // Define parallax effects for each image
-  const toolsY = useTransform(scrollYProgress, [0, 1], ["0%", "-40%"]);
-  const shape1Y = useTransform(scrollYProgress, [0, 1], ["0%", "-40%"]);
-
-  const socialProofVariants = {
-    hidden: { opacity: 0, y: 200 },
-    visible: { opacity: 1, y: 0 }
-  };
+  const toolsY = useTransform(scrollYProgress, [0, 1], ["0%", "-200%"]);
+  const shape1Y = useTransform(scrollYProgress, [0, 1], ["0%", "-220%"]);
 
   const section2TextVariants = {
     hidden: { opacity: 0, x: 150 },
     visible: { opacity: 1, x: 0 }
   };
 
-  const section3TextVariants = {
-    hidden: { opacity: 0, x: 0, y: -100 },
+  const socialProofTextVariants = {
+    hidden: { opacity: 0, x: 0, y: -40 },
     visible: { opacity: 1, x: 0, y: 0 }
-  };
+  }
+
 
   return (
-    <main data-scroll-speed="0.3" className="main w-[100vw] bg-[#f2f2f2]">
-      <Nav className={"h-[5rem] lg:h-[6rem] sticky top-0 z-30"} />
-      <Hero className="hero z-0"></Hero>
+    <main data-scroll-container data-scroll-speed="0.3" className="main w-[100vw] bg-[#f2f2f2]">
+      <Nav />
+      <div className="pt-[5rem] lg:pt-[6rem]">
+        <Hero className="hero z-0"></Hero>
+      </div>
 
       {/* Social Proof (Section 2)*/}
       {/* ADD TEXT ANIMATION */}
-      <motion.div
-        className="bg-[#c4c4ff] w-full grid grid-cols-2 gap-6 lg:grid lg:grid-cols-4 place-items-center py-12 lg:py-0 overflow-auto h-[calc(100vh-32rem)] min-h-fit lg:h-[24rem]"
-        variants={socialProofVariants}
-        initial="hidden"
-        whileInView="visible"
-        transition={{ duration: 1.3, ease: "easeInOut" }}
+      <div
+        className="bg-gradient-to-l from-[#917cdb] to-[#c4ceff]/60 w-full grid grid-cols-2 gap-6 lg:grid lg:grid-cols-4 place-items-center py-12 lg:py-0 overflow-auto h-[calc(100vh-32rem)] min-h-fit lg:h-[24rem]"
       >
-        <div className="bg-[#c4c4ff] pl-6 flex flex-col items-center justify-center h-full w-full py-4">
-          <p className="text-3xl md:text-5xl lg:text-6xl font-semibold text-center">60+</p>
+        <div className="bg-transparent pl-6 flex flex-col items-center justify-center h-full w-full py-4">
+          <motion.p
+            className="text-3xl md:text-5xl lg:text-6xl font-semibold text-center"
+            variants={socialProofTextVariants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ amount: 0.4 }}
+            transition={{ duration: 0.9, ease: "easeInOut" }}
+          >60+
+          </motion.p>
           <br className="hidden lg:inline" />
           <p className="font-semibold text-xl md:text-2xl leading-tight text-center lg:pt-4">Projects <br />Developed</p>
         </div>
-        <div className="bg-[#c4c4ff] border-black flex flex-col items-center justify-center h-full w-full py-4">
-          <p className="text-3xl md:text-5xl lg:text-6xl font-semibold text-center">100%</p>
+        <div className="bg-transparent border-black flex flex-col items-center justify-center h-full w-full py-4">
+          <motion.p
+            className="text-3xl md:text-5xl lg:text-6xl font-semibold text-center"
+            variants={socialProofTextVariants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ amount: 0.5 }}
+            transition={{ duration: 0.9, delay: 0.3, ease: "easeInOut" }}
+          >100%
+          </motion.p>
           <br className="hidden lg:inline" />
           <p className="font-semibold text-xl md:text-2xl leading-tight text-center lg:pt-4">Job Success <br />Rate</p>
         </div>
-        <div className="bg-[#c4c4ff] pl-6 flex flex-col items-center justify-center h-full w-full py-4">
-          <p className="text-3xl md:text-5xl lg:text-6xl font-semibold text-center">90+</p>
+        <div className="bg-transparent pl-6 flex flex-col items-center justify-center h-full w-full py-4">
+          <motion.p
+            className="text-3xl md:text-5xl lg:text-6xl font-semibold text-center"
+            variants={socialProofTextVariants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ amount: 0.5 }}
+            transition={{ duration: 0.9, delay: 0.6, ease: "easeInOut" }}
+          >90+</motion.p>
           <br className="hidden lg:inline" />
           <p className="font-semibold text-xl md:text-2xl leading-tight text-center lg:pt-4">UIs/UXs <br />Designed</p>
         </div>
-        <div className="bg-[#c4c4ff] pl-6 flex flex-col items-center justify-center h-full w-full py-4">
-          <p className="text-3xl md:text-5xl lg:text-6xl font-semibold">30+</p>
+        <div className="bg-transparent pl-6 flex flex-col items-center justify-center h-full w-full py-4">
+          <motion.p
+            className="text-3xl md:text-5xl lg:text-6xl font-semibold text-center"
+            variants={socialProofTextVariants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ amount: 0.5 }}
+            transition={{ duration: 0.9, delay: 0.9, ease: "easeInOut" }}
+          >30+</motion.p>
           <p className="font-semibold text-xl md:text-2xl leading-tight text-center lg:pt-4">Satisfied <br />Clients</p>
         </div>
-      </motion.div>
+      </div>
 
       {/*After hero (Section 2)*/}
-      <div className="section-2 justify-center lg:justify-start w-full flex flex-row min-h-fit pt-36 pb-8">
+      <div id="services" className="section-2 justify-center lg:justify-start w-full flex flex-row min-h-fit py-12 pt-24 lg:pt-36 lg:pb-8">
         <div className="w-2/3 lg:w-1/2 flex flex-col justify-center items-center align-center">
-          <motion.div
+          <div
             className="w-5/6 lg:w-2/3 lg:pl-8"
-            variants={section3TextVariants}
-            whileInView="visible"
-            initial="hidden"
-            viewport={{ amount: 0.4 }}
-            transition={{ duration: 0.7, ease: "easeInOut" }}>
-            <h2 className="text-2xl lg:text-6xl font-semibold pb-4 lg:pb-8 text-left">Our Expertise</h2>
+          >
+            <h2 className="text-2xl lg:text-5xl font-semibold pb-4 lg:pb-8 text-left">Our Expertise</h2>
 
             {/* TODO: add smooth transition to underline */}
             <Accordion type="single" collapsible className="w-full min-h-fit">
@@ -111,7 +131,7 @@ export default function Home() {
                   - Businesses
                   - Portfolios
                 </AccordionContent>
-              </AccordionItem>
+              </AccordionItem >
               <AccordionItem value="item-2">
                 <AccordionTrigger className="text-xl lg:text-[2.5rem] lg:pb-8 font-medium">Proprietary Software</AccordionTrigger>
                 <AccordionContent className="text-lg">
@@ -120,14 +140,14 @@ export default function Home() {
                   - Data analysis
                   - Data scrapers
                 </AccordionContent>
-              </AccordionItem>
+              </AccordionItem >
               <AccordionItem value="item-3">
                 <AccordionTrigger className="text-xl lg:text-[2.5rem] lg:pb-8 font-medium">SEO</AccordionTrigger>
                 <AccordionContent className="text-lg">
                   - Optimize websites for greater organic traffic
                   - Refactor code for easier parsing by web crawlers
                 </AccordionContent>
-              </AccordionItem>
+              </AccordionItem >
               <AccordionItem value="item-4">
                 <AccordionTrigger className="text-xl lg:text-[2.5rem] lg:pb-8 font-medium">Copywriting</AccordionTrigger>
                 <AccordionContent className="text-lg">
@@ -135,7 +155,7 @@ export default function Home() {
                   - Appealing copy for possible/existing clients
                   - Attention grabbing messages
                 </AccordionContent >
-              </AccordionItem>
+              </AccordionItem >
               <AccordionItem value="item-5">
                 <AccordionTrigger className="text-xl lg:text-[2.5rem] lg:pb-8 font-medium">Digital Marketing</AccordionTrigger>
                 <AccordionContent className="text-lg">
@@ -143,29 +163,29 @@ export default function Home() {
                   - Marketing campaigns
                   - Social media presence
                 </AccordionContent >
-              </AccordionItem>
-            </Accordion>
-          </motion.div>
-        </div>
+              </AccordionItem >
+            </Accordion >
+          </div >
+        </div >
         <div className="hidden lg:flex justify-center items-center lg:w-1/2 h-[500px] w-[500px] relative">
           <motion.div
-            className="absolute bottom-0 right-1/4"
+            className="absolute bottom-[-60%] right-1/4 bg-transparent"
             style={{ y: shape1Y }}>
-            <Image className="shape-3d" src={shape1} alt="image" width={390} height={390} />
+            <Image className="shape-3d bg-transparent" src={shape1} alt="image" width={390} height={390} />
           </motion.div>
         </div>
-      </div>
+      </div >
 
       {/* Section 3 */}
-      <div className="flex justify-center items-center w-full lg:p-0 h-fit lg:h-screen">
+      < div className="flex justify-center items-center w-full lg:p-0 h-fit lg:h-screen" >
         <div className="hidden lg:flex lg:h-2/3 lg:w-1/3 relative">
           <motion.div
-            className="absolute bottom-0 left-20"
+            className="absolute lg:bottom-[-100%] left-20 bg-transparent"
             style={{ y: toolsY }}>
-            <Image className="shape-3d" src={tools} alt="image" width={390} height={390} />
+            <Image className="shape-3d bg-transparent" src={tools} alt="image" width={390} height={390} />
           </motion.div>
         </div>
-        <div className="w-full h-full lg:w-2/3 flex flex-col justify-center items-center py-36 lg:p-0">
+        <div className="w-full h-full lg:w-2/3 flex flex-col justify-center items-center py-12 pb-28 lg:p-0">
           <motion.div className="w-2/3 text-5xl flex flex-col justify-center items-start"
             variants={section2TextVariants}
             whileInView="visible"
@@ -173,11 +193,11 @@ export default function Home() {
             viewport={{ amount: 0.4 }}
             transition={{ duration: 0.7, ease: "easeInOut" }}
           >
-            <p className="text-2xl lg:text-5xl pb-8">We believe that everyone has the power to create change in this world, and our job is to foster the environment for you</p>
+            <p className="text-2xl lg:text-5xl pb-8">We believe that everyone has the power to create change in this world, and our goal is to foster that environment for you</p>
             <p className="text-lg lg:text-2xl lg:w-5/6">Our world class designers, engineers, and marketing professionals have years of industry experience, and are sure to bring any idea you have to fruition</p>
-          </motion.div>
-        </div>
-      </div>
+          </motion.div >
+        </div >
+      </div >
 
       {/*
       <div className="mission flex flex-col bg-black">
@@ -198,7 +218,7 @@ export default function Home() {
 
 
       {/* Footer */}
-      <Footer className="footer" />
-    </main>
+      <Footer />
+    </main >
   );
 }

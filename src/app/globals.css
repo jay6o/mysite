@@ -144,10 +144,16 @@ div, nav {
   background: #F2F2F2;
 }
 
+.secondary {
+  color: black;
+  background: #C4C4FF;
+}
+
 body::-webkit-scrollbar {
   scrollbar-width: none;
 }
 
 html, body {
   overflow-x:hidden;
+  overscroll-behavior: none;
 }
