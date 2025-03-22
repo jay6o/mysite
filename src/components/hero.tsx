@@ -38,7 +38,7 @@ export default function Hero({ className }: { className: string }) {
         whileInView="visible"
         transition={{ duration: 0.7, ease: "easeInOut" }}
       >
-        <h1 className="w-5/6 font-semibold text-4xl p-6 lg:text-5xl text-left z-10">Transforming businesses with software and marketing</h1>
+        <h1 className="w-5/6 font-semibold text-4xl p-6 lg:text-5xl text-left z-10">Transforming businesses through software and marketing</h1>
         <p className="w-5/6 lg:w-2/3 text-lg lg:text-2xl text-left p-5">Experienced professionals ready to develop your business in the digital space. We hold your hand every step of the way, from design to deployment.</p>
         <div className="w-5/6 text-left p-5">
           <Link href="/contact"><Button variant={"custom"} className="font-bold text-lg h-[4rem] rounded-3xl border-black w-full lg:w-2/3">Get Started</Button></Link>

@@ -193,7 +193,7 @@ export default function Home() {
             viewport={{ amount: 0.4 }}
             transition={{ duration: 0.7, ease: "easeInOut" }}
           >
-            <p className="text-2xl lg:text-5xl pb-8">Dream on, we&apos;ll build it</p>
+            <p className="text-2xl lg:text-5xl font-semibold pb-8">Dream on, we&apos;ll build it</p>
             <p className="text-lg lg:text-2xl lg:w-5/6">Just give us your ideas, and our experienced professionals will build it for you. We keep you in the know about every move we make so that you are 100% satisfied with our service.</p>
           </motion.div >
         </div >
