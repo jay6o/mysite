@@ -115,9 +115,9 @@ export default function Home() {
       <div id="services" className="section-2 justify-center lg:justify-start w-full flex flex-row min-h-fit py-12 pt-24 lg:pt-36 lg:pb-8">
         <div className="w-2/3 lg:w-1/2 flex flex-col justify-center items-center align-center">
           <div
-            className="w-5/6 lg:w-2/3 lg:pl-8"
+            className="w-full lg:w-2/3 lg:pl-8"
           >
-            <h2 className="text-2xl lg:text-5xl font-semibold pb-4 lg:pb-8 text-left">Our Expertise</h2>
+            <h2 className="text-3xl lg:text-5xl font-semibold pb-4 lg:pb-8 text-left">Our Expertise</h2>
 
             {/* TODO: add smooth transition to underline */}
             <Accordion type="single" collapsible className="w-full min-h-fit">
