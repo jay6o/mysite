@@ -151,16 +151,17 @@ export default function Home() {
                 </AccordionContent>
               </AccordionItem >
               <AccordionItem value="item-3">
-                <AccordionTrigger className="text-xl lg:text-[2.1rem] lg:pb-8 font-medium">SEO</AccordionTrigger>
+                <AccordionTrigger className="text-xl lg:text-[2.1rem] lg:pb-8 font-medium">Digital Marketing</AccordionTrigger>
                 <AccordionContent className="text-lg lg:text-xl font-medium">
                   <ul className="list-disc list-inside">
-                    <li>Technical SEO audits</li>
-                    <li>Keyword research and strategy</li>
-                    <li>Optimize website accessibility</li>
-                    <li>Site speed optimization</li>
-                    <li>Content optimization</li>
+                    <li>PPC ads</li>
+                    <li>Email marketing</li>
+                    <li>Influencer/affiliate marketing</li>
+                    <li>Retargeting</li>
+                    <li>Content creation</li>
+                    <li>Social media presence</li>
                   </ul>
-                </AccordionContent>
+                </AccordionContent >
               </AccordionItem >
               <AccordionItem value="item-4">
                 <AccordionTrigger className="text-xl lg:text-[2.1rem] lg:pb-8 font-medium">Copywriting</AccordionTrigger>
@@ -176,17 +177,16 @@ export default function Home() {
                 </AccordionContent >
               </AccordionItem >
               <AccordionItem value="item-5">
-                <AccordionTrigger className="text-xl lg:text-[2.1rem] lg:pb-8 font-medium">Digital Marketing</AccordionTrigger>
+                <AccordionTrigger className="text-xl lg:text-[2.1rem] lg:pb-8 font-medium">SEO</AccordionTrigger>
                 <AccordionContent className="text-lg lg:text-xl font-medium">
                   <ul className="list-disc list-inside">
-                    <li>PPC ads</li>
-                    <li>Email marketing</li>
-                    <li>Influencer/affiliate marketing</li>
-                    <li>Retargeting</li>
-                    <li>Content creation</li>
-                    <li>Social media presence</li>
+                    <li>Technical SEO audits</li>
+                    <li>Keyword research and strategy</li>
+                    <li>Optimize website accessibility</li>
+                    <li>Site speed optimization</li>
+                    <li>Content optimization</li>
                   </ul>
-                </AccordionContent >
+                </AccordionContent>
               </AccordionItem >
             </Accordion >
           </div >
