@@ -124,44 +124,68 @@ export default function Home() {
               <AccordionItem value="item-1">
                 <AccordionTrigger className="text-xl lg:text-[2.1rem] lg:pb-8 font-medium">Web Development</AccordionTrigger>
                 <AccordionContent className="text-lg lg:text-xl font-medium">
-                  - Custom coded websites<br />
-                  - Custom animations<br />
-                  - Ecommerce<br />
-                  - Agencies<br />
-                  - Businesses<br />
-                  - Portfolios<br />
+                  <ul className="list-disc list-inside">
+                    <li>Responsive designs</li>
+                    <li>Company and portfolio websites</li>
+                    <li>API development and integration</li>
+                    <li>Database design and management</li>
+                    <li>Performance optimization</li>
+                    <li>Full-stack development</li>
+                    <li>Website maintenance and support</li>
+                  </ul>
                 </AccordionContent>
               </AccordionItem >
               <AccordionItem value="item-2">
                 <AccordionTrigger className="text-xl lg:text-[2.1rem] lg:pb-8 font-medium">Proprietary Software</AccordionTrigger>
                 <AccordionContent className="text-lg lg:text-xl font-medium">
-                  - Software applications<br />
-                  - Mobile apps<br />
-                  - Data analysis<br />
-                  - Data scrapers<br />
+                  <ul className="list-disc list-inside">
+                    <li>Custom software applications</li>
+                    <li>Custom CRM systems</li>
+                    <li>Inventory management systems</li>
+                    <li>E-Commerce platforms</li>
+                    <li>Content management systems (CMS)</li>
+                    <li>Automation tools</li>
+                    <li>Business intelligence dashboards</li>
+                    <li>API development and integration</li>
+                  </ul>
                 </AccordionContent>
               </AccordionItem >
               <AccordionItem value="item-3">
                 <AccordionTrigger className="text-xl lg:text-[2.1rem] lg:pb-8 font-medium">SEO</AccordionTrigger>
                 <AccordionContent className="text-lg lg:text-xl font-medium">
-                  - Optimize websites for greater organic traffic<br />
-                  - Refactor code for easier parsing by web crawlers<br />
+                  <ul className="list-disc list-inside">
+                    <li>Technical SEO audits</li>
+                    <li>Keyword research and strategy</li>
+                    <li>Optimize website accessibility</li>
+                    <li>Site speed optimization</li>
+                    <li>Content optimization</li>
+                  </ul>
                 </AccordionContent>
               </AccordionItem >
               <AccordionItem value="item-4">
                 <AccordionTrigger className="text-xl lg:text-[2.1rem] lg:pb-8 font-medium">Copywriting</AccordionTrigger>
                 <AccordionContent className="text-lg lg:text-xl font-medium">
-                  - Brand image<br />
-                  - Appealing copy for possible/existing clients<br />
-                  - Attention grabbing messages<br />
+                  <ul className="list-disc list-inside">
+                    <li>Brand image</li>
+                    <li>Attention grabbing statements</li>
+                    <li>Persuasive product descriptions</li>
+                    <li>Ad copy</li>
+                    <li>White papers and case studies</li>
+                    <li>Tagline and slogan development</li>
+                  </ul>
                 </AccordionContent >
               </AccordionItem >
               <AccordionItem value="item-5">
                 <AccordionTrigger className="text-xl lg:text-[2.1rem] lg:pb-8 font-medium">Digital Marketing</AccordionTrigger>
                 <AccordionContent className="text-lg lg:text-xl font-medium">
-                  - Increase traffic<br />
-                  - Marketing campaigns<br />
-                  - Social media presence<br />
+                  <ul className="list-disc list-inside">
+                    <li>PPC ads</li>
+                    <li>Email marketing</li>
+                    <li>Influencer/affiliate marketing</li>
+                    <li>Retargeting</li>
+                    <li>Content creation</li>
+                    <li>Social media presence</li>
+                  </ul>
                 </AccordionContent >
               </AccordionItem >
             </Accordion >
