@@ -11,7 +11,7 @@ export default function Nav() {
 
   return (
     <nav className="h-[5rem] lg:h-[6rem] fixed top-0 left-0 right-0 z-30 bg-transparent backdrop-blur-md" data-scroll-sticky data-scroll-target="main">
-      <div className="flex justify-row justify-between h-full items-center border-b-2 border-black bg-[#f2f2f2]/70">
+      <div className="flex justify-row justify-between h-full items-center bg-[#f2f2f2]/70 border-b-[0.09rem] lg:border-b-[0.09rem] border-black">
         <div className="ml-12 bg-transparent">
           <Link href="/">
             <h1 className="font-bold text-xl lg:text-2xl bg-transparent">
